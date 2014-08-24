@@ -203,7 +203,7 @@ void loop()
         Serial.print("iterations: ");
         Serial.print(iterations);
         Serial.print(" time: ");
-        Serial.println(timeDifference(currentTime-iterationTimeMS));
+        Serial.println(timeDifference(currentTime, iterationTimeMS));
         iterationTimeMS=currentTime;
     }
     Native::iterate(pressedState, 0);
