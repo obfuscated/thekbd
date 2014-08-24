@@ -189,6 +189,7 @@ void setup()
 }
 
 int iterations=0;
+unsigned long iterationTimeMS=0;
 
 PressedState pressedState;
 
@@ -200,7 +201,10 @@ void loop()
     if (iterations%200==0)
     {
         Serial.print("iterations: ");
-        Serial.println(iterations);
+        Serial.print(iterations);
+        Serial.print(" time: ");
+        Serial.println(timeDifference(currentTime-iterationTimeMS));
+        iterationTimeMS=currentTime;
     }
     Native::iterate(pressedState, 0);
     MCP23017::iterate(pressedState, 7);
