@@ -2,8 +2,7 @@
 #include <Wire.h>
 #include <limits.h>
 
-const int countRows=7;
-const int countColumns=7;
+#include "constants.h"
 
 void print(bool released, int row, int column)
 {
@@ -23,13 +22,10 @@ unsigned long timeDifference(unsigned long a, unsigned long b)
 
 struct PressedState
 {
-    enum {
-        totalNumber=countRows*2*countColumns
-    };
     PressedState() : currentTime(0)
     {
-        memset(state, 0, sizeof(int8_t)*totalNumber);
-        memset(changeTime, 0, sizeof(unsigned long)*totalNumber);
+        memset(state, 0, sizeof(int8_t)*keysTotalNumber);
+        memset(changeTime, 0, sizeof(unsigned long)*keysTotalNumber);
     }
     int8_t get(int row, int column) const { return state[row*2*countColumns+column]; }
 //    void set(int row, int column, int8_t newState) { state[row*2*countColumns+column]=newState; }
@@ -58,8 +54,8 @@ struct PressedState
         }
     }
 private:
-    int8_t state[totalNumber];
-    unsigned long changeTime[totalNumber];
+    int8_t state[keysTotalNumber];
+    unsigned long changeTime[keysTotalNumber];
     unsigned long currentTime;
 };
 
