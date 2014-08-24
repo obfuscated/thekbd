@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Wire.h>
+#include <limits.h>
 
 const int countRows=7;
 const int countColumns=7;
@@ -12,35 +13,54 @@ void print(bool released, int row, int column)
     Serial.println(row);
 }
 
+unsigned long timeDifference(unsigned long a, unsigned long b)
+{
+    if (a>=b)
+        return a-b;
+    else
+        return ULONG_MAX-a+b;
+}
+
 struct PressedState
 {
-    PressedState()
+    enum {
+        totalNumber=countRows*2*countColumns
+    };
+    PressedState() : currentTime(0)
     {
-        memset(state, 0, sizeof(int8_t)*countRows*2*countColumns);
+        memset(state, 0, sizeof(int8_t)*totalNumber);
+        memset(changeTime, 0, sizeof(unsigned long)*totalNumber);
     }
     int8_t get(int row, int column) const { return state[row*2*countColumns+column]; }
 //    void set(int row, int column, int8_t newState) { state[row*2*countColumns+column]=newState; }
 
+    void setCurrentTime(unsigned long time) { currentTime=time; }
+
     void update(int row, int column, bool pressed)
     {
-        int8_t &currState=state[row*2*countColumns+column];
-        if (pressed)
+        const unsigned index=row*2*countColumns+column;
+        int8_t &currState=state[index];
+        bool oldPressed=((currState&1)!=0);
+
+        if (oldPressed==pressed)
         {
-            currState++;
-            if (currState==10)
+            bool changing=((currState&2)!=0);
+            if (changing && timeDifference(currentTime, changeTime[index])>5)
             {
-                currState=0;
-                print(false, row, column);
+                currState=(pressed ? 1 : 0);
+                print(!pressed, row, column);
             }
         }
-        else if (currState>=10)
+        else
         {
-            currState=0;
-            print(true, row, column);
+            currState=(pressed ? 1 : 0)+2;
+            changeTime[index]=currentTime;
         }
     }
 private:
-    int8_t state[countRows*2*countColumns];
+    int8_t state[totalNumber];
+    unsigned long changeTime[totalNumber];
+    unsigned long currentTime;
 };
 
 namespace Native
@@ -174,6 +194,8 @@ PressedState pressedState;
 
 void loop()
 {
+    unsigned long currentTime=millis();
+    pressedState.setCurrentTime(currentTime);
     iterations++;
     if (iterations%200==0)
     {
