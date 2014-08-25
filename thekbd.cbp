@@ -157,6 +157,7 @@
 		</Unit>
 		<Unit filename="firmware.cpp" />
 		<Unit filename="libraries/libraries.cpp" />
+		<Unit filename="mapping.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

@@ -22,7 +22,7 @@ unsigned long timeDifference(unsigned long a, unsigned long b)
 
 struct PressedState
 {
-    PressedState() : currentTime(0)
+    PressedState(const uint8_t *layoutTable) : currentTime(0), layoutTable(layoutTable)
     {
         memset(state, 0, sizeof(int8_t)*keysTotalNumber);
         memset(changeTime, 0, sizeof(unsigned long)*keysTotalNumber);
@@ -44,7 +44,7 @@ struct PressedState
             if (changing && timeDifference(currentTime, changeTime[index])>5)
             {
                 currState=(pressed ? 1 : 0);
-                print(!pressed, row, column);
+                stateChange(pressed, row, column);
             }
         }
         else
@@ -53,10 +53,27 @@ struct PressedState
             changeTime[index]=currentTime;
         }
     }
+
+    void stateChange(bool pressed, int row, int column) const
+    {
+        uint8_t scanCode=layoutTable[row*2*countColumns+column];
+        if (scanCode>0)
+        {
+            Serial.print(pressed ? "pressed key:" : "released key:");
+            Serial.println(scanCode);
+            if (pressed)
+                Keyboard.press(scanCode);
+            else
+                Keyboard.release(scanCode);
+        }
+        else
+            print(!pressed, row, column);
+    }
 private:
     int8_t state[keysTotalNumber];
     unsigned long changeTime[keysTotalNumber];
     unsigned long currentTime;
+    const uint8_t * const layoutTable;
 };
 
 namespace Native
@@ -182,12 +199,15 @@ void setup()
 {
     Native::setup();
     MCP23017::setup();
+
+    Keyboard.begin();
 }
 
 int iterations=0;
 unsigned long iterationTimeMS=0;
+extern const uint8_t layoutTable[];
 
-PressedState pressedState;
+PressedState pressedState(layoutTable);
 
 void loop()
 {
