@@ -4,13 +4,13 @@
 
 extern const uint8_t layoutTable[keysTotalNumber]={
     0, 0, KEY_RIGHT_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, 0, 0, // row 0 right
-    0, KEY_BACKSPACE, KEY_END, KEY_PAGE_DOWN, KEY_HOME, 0, 0, // row 0 left
+    0, KEY_BACKSPACE, KEY_END, KEY_PAGE_DOWN, KEY_HOME, 0, 0,    // row 0 left
 
     KEY_RIGHT_ALT, 0,   0, KEY_UP_ARROW, 0, KEY_RETURN, KEY_DELETE, // row 1 right
-    KEY_LEFT_GUI,  ' ', 0, KEY_PAGE_UP,  0, 0, KEY_LEFT_ALT, // row 1 left
+    KEY_LEFT_GUI,  ' ', 0, KEY_PAGE_UP,  0, 0, KEY_LEFT_ALT,        // row 1 left
 
-    KEY_RIGHT_CTRL, '/', '.', ',', 'm', 'n', 0, //  row 2    right
-    0, 'b', 'v', 'c', 'x', 'z', KEY_LEFT_CTRL,  //              row 2   left
+    KEY_RIGHT_CTRL, '/', '.', ',', 'm', 'n', 0, //  row 2 right
+    0, 'b', 'v', 'c', 'x', 'z', KEY_LEFT_CTRL,  //  row 2 left
 
     KEY_RIGHT_SHIFT, ';', 'l', 'k', 'j', 'h', '\\',           // row 3 right
     '\'',            'g', 'f', 'd', 's', 'a', KEY_LEFT_SHIFT, // row 3 left
