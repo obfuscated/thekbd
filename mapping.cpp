@@ -18,7 +18,7 @@ extern const uint8_t layoutTable[keysTotalNumber]={
     0,   'p', 'o', 'i', 'u', 'y', ']',     // row 4 right
     '[', 't', 'r', 'e', 'w', 'q', KEY_TAB, // row 4 left
 
-    '7', '8', '9', '0', '-', '=', 0,   // row  5 right
+    0,   '=', '-', '0', '9', '8', '7', // row  5 right
     '6', '5', '4', '3', '2', '1', '`', // row 5  left
 
     KEY_INSERT, KEY_F12, KEY_F11, KEY_F10, KEY_F9, KEY_F8, KEY_F7,  // row 6 right
