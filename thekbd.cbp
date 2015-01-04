@@ -86,7 +86,7 @@
 			<Add option="-ffunction-sections" />
 			<Add option="-fdata-sections" />
 			<Add option="-DARDUINO=105" />
-			<Add option="-DTWI_FREQ=800000L" />
+			<Add option="-DTWI_FREQ=400000L" />
 			<Add option="-DUSE_EEPROM=0" />
 			<Add option="-DUSE_ETHERNET=0" />
 			<Add option="-DUSE_FIRMATA=0" />
