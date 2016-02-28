@@ -126,6 +126,9 @@ namespace MCP23017
     const int baseRow=0;
     const int baseColumn=1;
 
+    uint32_t writeErrors=0;
+    uint32_t readErrors=0;
+
     void writeRegister(uint8_t reg, uint8_t value)
     {
         int bytes=0, status=0;
@@ -133,6 +136,8 @@ namespace MCP23017
         bytes+=Wire.write(reg);
         bytes+=Wire.write(value);
         status=Wire.endTransmission();
+        if (status!=0)
+            writeErrors++;
     //    if (status!=bytes)
     //        Serial.println("error:write reg");
     }
@@ -141,16 +146,22 @@ namespace MCP23017
     {
         Wire.beginTransmission(I2CPort);
         Wire.write(reg);
-        Wire.endTransmission();
+        int status=Wire.endTransmission();
+        if (status!=0)
+            writeErrors++;
     }
 
     uint8_t readRegister(uint8_t reg)
     {
         Wire.beginTransmission(I2CPort);
         Wire.write(reg);
-        Wire.endTransmission();
+        int status=Wire.endTransmission();
+        if (status!=0)
+            writeErrors++;
         // request one byte of data from MCP20317
-        Wire.requestFrom(I2CPort, 1);
+        int bytes=Wire.requestFrom(I2CPort, 1);
+        if (bytes!=1)
+            readErrors++;
         return Wire.read();
     }
 
@@ -203,7 +214,7 @@ void setup()
     Keyboard.begin();
 }
 
-int iterations=0;
+uint32_t iterations=0;
 unsigned long iterationTimeMS=0;
 extern const uint8_t layoutTable[];
 
@@ -214,12 +225,18 @@ void loop()
     unsigned long currentTime=millis();
     pressedState.setCurrentTime(currentTime);
     iterations++;
-    if (iterations%200==0)
+    if (iterations%1000==0)
     {
         Serial.print("iterations: ");
         Serial.print(iterations);
         Serial.print(" time: ");
-        Serial.println(timeDifference(currentTime, iterationTimeMS));
+        Serial.print(timeDifference(currentTime, iterationTimeMS));
+        Serial.print(" (errors: ");
+        Serial.print(MCP23017::writeErrors);
+        Serial.print(", ");
+        Serial.print(MCP23017::readErrors);
+        Serial.println(")");
+
         iterationTimeMS=currentTime;
     }
     Native::iterate(pressedState, 0);
