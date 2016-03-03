@@ -27,14 +27,14 @@ struct PressedState
         memset(state, 0, sizeof(int8_t)*keysTotalNumber);
         memset(changeTime, 0, sizeof(unsigned long)*keysTotalNumber);
     }
-    int8_t get(int row, int column) const { return state[row*2*countColumns+column]; }
+    int8_t get(uint8_t row, uint8_t column) const { return state[row*2*countColumns+column]; }
 //    void set(int row, int column, int8_t newState) { state[row*2*countColumns+column]=newState; }
 
     void setCurrentTime(unsigned long time) { currentTime=time; }
 
-    void update(int row, int column, bool pressed)
+    void update(uint8_t row, uint8_t column, bool pressed)
     {
-        const unsigned index=row*2*countColumns+column;
+        const uint8_t index=row*2*countColumns+column;
         int8_t &currState=state[index];
         bool oldPressed=((currState&1)!=0);
 
@@ -54,7 +54,7 @@ struct PressedState
         }
     }
 
-    void stateChange(bool pressed, int row, int column) const
+    void stateChange(bool pressed, uint8_t row, uint8_t column) const
     {
         uint8_t scanCode=layoutTable[row*2*countColumns+column];
         if (scanCode>0)
@@ -78,33 +78,37 @@ private:
 
 namespace Native
 {
-    const int outputPins[7]={A0, A1, A2, 5, A4, A5, A6};
-    const int inputPins[7]={6, 7, 8, 9, 10, 11, 12};
+    const uint8_t outputPins[7]={A0, A1, A2, 5, A4, A5, A6};
+    const uint8_t inputPins[7]={6, 7, 8, 9, 10, 11, 12};
 
     void setup()
     {
-        for (int ii=0; ii<countRows; ++ii)
+        for (uint8_t ii=0; ii<countRows; ++ii)
             pinMode(outputPins[ii], INPUT_PULLUP);
-        for (int ii=0; ii<countColumns; ++ii)
+        for (uint8_t ii=0; ii<countColumns; ++ii)
             pinMode(inputPins[ii], INPUT_PULLUP);
     }
 
-    void iterate(PressedState &pressedState, int offsetColumn)
+    void iterate(PressedState &pressedState, uint8_t offsetColumn)
     {
-        for (int column=0; column<countColumns; ++column)
+        uint8_t column=countColumns-1;
+        do
         {
             pinMode(outputPins[column], OUTPUT);
 
             digitalWrite(outputPins[column], LOW);
-            for (int row=0; row<countRows; ++row)
+            uint8_t row=countRows-1;
+            do
             {
-                int pressed=!digitalRead(inputPins[row]);
-                pressedState.update(row, column+offsetColumn, pressed!=0);
+                bool pressed=(digitalRead(inputPins[row])==0);
+                pressedState.update(row, column+offsetColumn, pressed);
             }
+            while (row--);
 
             digitalWrite(outputPins[column], HIGH);
             pinMode(outputPins[column], INPUT_PULLUP);
         }
+        while (column--);
     }
 } // namespace Native
 
@@ -131,7 +135,7 @@ namespace MCP23017
 
     void writeRegister(uint8_t reg, uint8_t value)
     {
-        int bytes=0, status=0;
+        uint8_t bytes=0, status=0;
         Wire.beginTransmission(I2CPort);
         bytes+=Wire.write(reg);
         bytes+=Wire.write(value);
@@ -146,7 +150,7 @@ namespace MCP23017
     {
         Wire.beginTransmission(I2CPort);
         Wire.write(reg);
-        int status=Wire.endTransmission();
+        uint8_t status=Wire.endTransmission();
         if (status!=0)
             writeErrors++;
     }
@@ -155,11 +159,11 @@ namespace MCP23017
     {
         Wire.beginTransmission(I2CPort);
         Wire.write(reg);
-        int status=Wire.endTransmission();
+        uint8_t status=Wire.endTransmission();
         if (status!=0)
             writeErrors++;
         // request one byte of data from MCP20317
-        int bytes=Wire.requestFrom(I2CPort, 1);
+        uint8_t bytes=Wire.requestFrom(I2CPort, 1);
         if (bytes!=1)
             readErrors++;
         return Wire.read();
@@ -187,21 +191,25 @@ namespace MCP23017
         writeRegister(IPOLB, 0xFF);
     }
 
-    void iterate(PressedState &pressedState, int offsetColumn)
+    void iterate(PressedState &pressedState, uint8_t offsetColumn)
     {
-        for (int8_t column=0; column<countColumns; ++column)
+        uint8_t column=countColumns-1;
+        do
         {
             enableColumn(column+baseColumn);
             uint8_t value=readRegister(GPIOB);
             for (uint8_t ii=0; ii<baseRow; ++ii)
                 value>>=1;
 
-            for (uint8_t row=0; row<countRows; ++row)
+            uint8_t row=countRows-1;
+            do
             {
-                pressedState.update(row, column+offsetColumn, (value&1)==1);
+                pressedState.update(countRows-1-row, column+offsetColumn, (value&1)==1);
                 value>>=1;
             }
+            while (row--);
         }
+        while (column--);
     }
 
 } // namespace MCP23017
