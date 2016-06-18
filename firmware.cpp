@@ -60,6 +60,10 @@ struct PressedState
         if (scanCode>0)
         {
             Serial.print(pressed ? "pressed key:" : "released key:");
+            Serial.print(row);
+            Serial.print(" ");
+            Serial.print(column);
+            Serial.print(" ");
             Serial.println(scanCode);
             if (pressed)
                 Keyboard.press(scanCode);
