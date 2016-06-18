@@ -24,7 +24,10 @@ unsigned long timeDifference(unsigned long a, unsigned long b)
 
 struct PressedState
 {
-    PressedState(const uint8_t *layoutTable) : currentTime(0), layoutTable(layoutTable)
+    PressedState(const uint8_t *layoutTable) :
+        currentTime(0),
+        layoutTable(layoutTable),
+        hasChanges(false)
     {
         memset(state, 0, sizeof(int8_t)*keysTotalNumber);
         memset(changeTime, 0, sizeof(unsigned long)*keysTotalNumber);
@@ -56,7 +59,7 @@ struct PressedState
         }
     }
 
-    void stateChange(bool pressed, uint8_t row, uint8_t column) const
+    void stateChange(bool pressed, uint8_t row, uint8_t column)
     {
         uint8_t scanCode=layoutTable[row*2*countColumns+column];
         if (scanCode>0)
@@ -71,15 +74,26 @@ struct PressedState
                 Keyboard.press(scanCode);
             else
                 Keyboard.release(scanCode);
+            hasChanges=true;
         }
         else
             print(!pressed, row, column);
+    }
+    void sendReport()
+    {
+        if (hasChanges)
+        {
+            Keyboard.sendReport();
+            hasChanges=false;
+        }
+
     }
 private:
     int8_t state[keysTotalNumber];
     unsigned long changeTime[keysTotalNumber];
     unsigned long currentTime;
     const uint8_t * const layoutTable;
+    bool hasChanges;
 };
 
 namespace Native
@@ -255,5 +269,5 @@ void loop()
     }
     Native::iterate(pressedState, 0);
     MCP23017::iterate(pressedState, 7);
-    Keyboard.sendReport();
+    pressedState.sendReport();
 }
