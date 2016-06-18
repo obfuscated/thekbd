@@ -108,6 +108,7 @@
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Ethernet/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Firmata/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Flash/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/HID/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LCD4884/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LCD4Bit_mod/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LiquidCrystal/src" />
