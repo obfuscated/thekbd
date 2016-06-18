@@ -16,9 +16,9 @@
 					<Add option="-DF_CPU=16000000L" />
 					<Add option="-D__AVR_ATmega328P__" />
 					<Add option="-Os" />
-					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
-					<Add directory="$(ARDUINO_DIR)/libraries" />
-					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/standard" />
+					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/cores/arduino" />
+					<Add directory="$(ARDUINO_DIR)/libraries/avr" />
+					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/variants/standard" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -52,9 +52,9 @@
 					<Add option="-DUSB_VID=0x2341" />
 					<Add option="-DUSB_PID=0x803C" />
 					<Add option="-Os" />
-					<Add directory="$(ARDUINO_DIR)/hardware/arduino/cores/arduino" />
-					<Add directory="$(ARDUINO_DIR)/libraries" />
-					<Add directory="$(ARDUINO_DIR)/hardware/arduino/variants/micro" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
+					<Add directory="$(ARDUINO_DIR)/avr/libraries" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
 				</Compiler>
 				<Linker>
 					<Add option="-mmcu=$(MCU)" />
@@ -85,7 +85,9 @@
 			<Add option="-fno-exceptions" />
 			<Add option="-ffunction-sections" />
 			<Add option="-fdata-sections" />
-			<Add option="-DARDUINO=105" />
+			<Add option="-std=c++11" />
+			<Add option="-fno-threadsafe-statics" />
+			<Add option="-DARDUINO=10609" />
 			<Add option="-DTWI_FREQ=400000L" />
 			<Add option="-DUSE_EEPROM=0" />
 			<Add option="-DUSE_ETHERNET=0" />
@@ -102,23 +104,25 @@
 			<Add option="-DUSE_TINYGPS=0" />
 			<Add option="-DUSE_WIRE=1" />
 			<Add directory="." />
-			<Add directory="$(ARDUINO_DIR)/libraries/EEPROM" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Ethernet" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Firmata" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Flash" />
-			<Add directory="$(ARDUINO_DIR)/libraries/LCD4884" />
-			<Add directory="$(ARDUINO_DIR)/libraries/LCD4Bit_mod" />
-			<Add directory="$(ARDUINO_DIR)/libraries/LiquidCrystal" />
-			<Add directory="$(ARDUINO_DIR)/libraries/SD" />
-			<Add directory="$(ARDUINO_DIR)/libraries/SD/utility" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Servo" />
-			<Add directory="$(ARDUINO_DIR)/libraries/SevenSegment" />
-			<Add directory="$(ARDUINO_DIR)/libraries/SoftwareSerial" />
-			<Add directory="$(ARDUINO_DIR)/libraries/SPI" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Stepper" />
-			<Add directory="$(ARDUINO_DIR)/libraries/TinyGPS" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Wire" />
-			<Add directory="$(ARDUINO_DIR)/libraries/Wire/utility" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/EEPROM/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Ethernet/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Firmata/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Flash/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/HID/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LCD4884/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LCD4Bit_mod/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/LiquidCrystal/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SD/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SD/utility/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Servo/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SevenSegment/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SoftwareSerial/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SPI/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Stepper/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/TinyGPS/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src" />
+			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src/utility" />
+			<Add directory="libraries/HID/src" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
@@ -130,6 +134,7 @@
 		<Unit filename="cores/HID.cpp" />
 		<Unit filename="cores/HardwareSerial.cpp" />
 		<Unit filename="cores/IPAddress.cpp" />
+		<Unit filename="cores/PluggableUSB.cpp" />
 		<Unit filename="cores/Print.cpp" />
 		<Unit filename="cores/Stream.cpp" />
 		<Unit filename="cores/Tone.cpp" />
@@ -139,8 +144,15 @@
 		</Unit>
 		<Unit filename="cores/WMath.cpp" />
 		<Unit filename="cores/WString.cpp" />
+		<Unit filename="cores/Wire.cpp" />
+		<Unit filename="cores/hooks.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cores/main.cpp" />
 		<Unit filename="cores/new.cpp" />
+		<Unit filename="cores/twi.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cores/wiring.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -157,7 +169,16 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="firmware.cpp" />
-		<Unit filename="libraries/libraries.cpp" />
+		<Unit filename="libraries/HID/src/ASCIIMap.h" />
+		<Unit filename="libraries/HID/src/BootKeyboard/BootKeyboard.h" />
+		<Unit filename="libraries/HID/src/DescriptorPrimitives.h" />
+		<Unit filename="libraries/HID/src/HID-Settings.h" />
+		<Unit filename="libraries/HID/src/HIDAliases.h" />
+		<Unit filename="libraries/HID/src/HIDTables.h" />
+		<Unit filename="libraries/HID/src/KeyboardioHID.h" />
+		<Unit filename="libraries/HID/src/LEDs.h" />
+		<Unit filename="libraries/HID/src/MultiReport/Keyboard.cpp" />
+		<Unit filename="libraries/HID/src/MultiReport/Keyboard.h" />
 		<Unit filename="mapping.cpp" />
 		<Extensions>
 			<envvars />
