@@ -1,6 +1,8 @@
 thekbd
 ======
 
+![Header Picture](images/mk1.0001.jpg)
+
 My custom keyboard project
 
 Ideas taken from The ErgoDox, AcidFire's project and many other projects found at http://geekhack.org/ and http://deskthority.net/
