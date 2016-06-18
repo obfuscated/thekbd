@@ -141,8 +141,15 @@
 		</Unit>
 		<Unit filename="cores/WMath.cpp" />
 		<Unit filename="cores/WString.cpp" />
+		<Unit filename="cores/Wire.cpp" />
+		<Unit filename="cores/hooks.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cores/main.cpp" />
 		<Unit filename="cores/new.cpp" />
+		<Unit filename="cores/twi.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="cores/wiring.c">
 			<Option compilerVar="CC" />
 		</Unit>
