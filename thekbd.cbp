@@ -122,6 +122,7 @@
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/TinyGPS/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src" />
 			<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src/utility" />
+			<Add directory="libraries/HID/src" />
 		</Compiler>
 		<Linker>
 			<Add option="-s" />
@@ -168,6 +169,16 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="firmware.cpp" />
+		<Unit filename="libraries/HID/src/ASCIIMap.h" />
+		<Unit filename="libraries/HID/src/BootKeyboard/BootKeyboard.h" />
+		<Unit filename="libraries/HID/src/DescriptorPrimitives.h" />
+		<Unit filename="libraries/HID/src/HID-Settings.h" />
+		<Unit filename="libraries/HID/src/HIDAliases.h" />
+		<Unit filename="libraries/HID/src/HIDTables.h" />
+		<Unit filename="libraries/HID/src/KeyboardioHID.h" />
+		<Unit filename="libraries/HID/src/LEDs.h" />
+		<Unit filename="libraries/HID/src/MultiReport/Keyboard.cpp" />
+		<Unit filename="libraries/HID/src/MultiReport/Keyboard.h" />
 		<Unit filename="mapping.cpp" />
 		<Extensions>
 			<envvars />

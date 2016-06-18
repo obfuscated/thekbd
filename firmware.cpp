@@ -4,6 +4,8 @@
 
 #include "constants.h"
 
+#include "KeyboardioHID.h"
+
 void print(bool released, int row, int column)
 {
     Serial.print(released ? "released: " : "pressed: ");
@@ -253,4 +255,5 @@ void loop()
     }
     Native::iterate(pressedState, 0);
     MCP23017::iterate(pressedState, 7);
+    Keyboard.sendReport();
 }
