@@ -87,6 +87,7 @@
 			<Add option="-fdata-sections" />
 			<Add option="-std=c++11" />
 			<Add option="-fno-threadsafe-statics" />
+			<Add option="-fno-fat-lto-objects -flto" />
 			<Add option="-DARDUINO=10609" />
 			<Add option="-DTWI_FREQ=400000L" />
 			<Add option="-DUSE_EEPROM=0" />
@@ -127,6 +128,7 @@
 		<Linker>
 			<Add option="-s" />
 			<Add option="-Wl,--gc-sections" />
+			<Add option="-flto -Os" />
 		</Linker>
 		<Unit filename="README.md" />
 		<Unit filename="constants.h" />
