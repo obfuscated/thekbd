@@ -166,15 +166,6 @@ namespace MCP23017
     //        Serial.println("error:write reg");
     }
 
-    void setRegisterForRead(uint8_t reg)
-    {
-        Wire.beginTransmission(I2CPort);
-        Wire.write(reg);
-        uint8_t status=Wire.endTransmission();
-        if (status!=0)
-            writeErrors++;
-    }
-
     uint8_t readRegister(uint8_t reg)
     {
         Wire.beginTransmission(I2CPort);
