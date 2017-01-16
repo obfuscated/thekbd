@@ -194,17 +194,14 @@ namespace MCP23017
         uint8_t value=1<<column;
         value=0xFF&(~value);
 
-        writeRegister(IODIRA, value);
-        writeRegister(GPPUA, value);
-        writeRegister(GPIOA, 0x00);
+        writeRegister(GPIOA, value);
     }
 
     void setup()
     {
         Wire.begin(); // wake up I2C bus
 
-        writeRegister(IODIRA, 0xFF&(~0x80));
-        writeRegister(GPPUA, 0xFF&(~0x80));
+        writeRegister(IODIRA, 0x00);
 
         writeRegister(IODIRB, 0xFF);
         writeRegister(GPPUB, 0xFF);
