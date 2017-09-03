@@ -177,6 +177,7 @@
 		<Unit filename="libraries/HID/src/LEDs.h" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.cpp" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.h" />
+		<Unit filename="libraries/libraries.cpp" />
 		<Unit filename="mapping.cpp" />
 		<Extensions>
 			<envvars />
