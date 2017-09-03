@@ -16,9 +16,9 @@
 					<Add option="-mmcu=$(MCU)" />
 					<Add option="-DF_CPU=16000000L" />
 					<Add option="-D__AVR_ATmega328P__" />
-					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/cores/arduino" />
-					<Add directory="$(ARDUINO_DIR)/libraries/avr" />
-					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/variants/standard" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
+					<Add directory="$(ARDUINO_DIR)/avr/libraries" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
