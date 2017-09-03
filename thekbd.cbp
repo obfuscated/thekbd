@@ -12,17 +12,17 @@
 				<Option type="1" />
 				<Option compiler="avr-gcc" />
 				<Compiler>
+					<Add option="-Os" />
 					<Add option="-mmcu=$(MCU)" />
 					<Add option="-DF_CPU=16000000L" />
 					<Add option="-D__AVR_ATmega328P__" />
-					<Add option="-Os" />
 					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/libraries/avr" />
 					<Add directory="$(ARDUINO_DIR)/hardware/avr/arduino/variants/standard" />
 				</Compiler>
 				<Linker>
-					<Add option="-mmcu=$(MCU)" />
 					<Add option="-s" />
+					<Add option="-mmcu=$(MCU)" />
 					<Add option="-lm" />
 				</Linker>
 				<ExtraCommands>
@@ -46,19 +46,19 @@
 				<Option type="1" />
 				<Option compiler="avr-gcc" />
 				<Compiler>
+					<Add option="-Os" />
 					<Add option="-mmcu=$(MCU)" />
 					<Add option="-DF_CPU=16000000L" />
 					<Add option="-D__AVR_ATmega32U4__" />
 					<Add option="-DUSB_VID=0x2341" />
 					<Add option="-DUSB_PID=0x803C" />
-					<Add option="-Os" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/avr/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
 				</Compiler>
 				<Linker>
-					<Add option="-mmcu=$(MCU)" />
 					<Add option="-s" />
+					<Add option="-mmcu=$(MCU)" />
 					<Add option="-lm" />
 				</Linker>
 				<ExtraCommands>
@@ -146,15 +146,11 @@
 		</Unit>
 		<Unit filename="cores/WMath.cpp" />
 		<Unit filename="cores/WString.cpp" />
-		<Unit filename="cores/Wire.cpp" />
 		<Unit filename="cores/hooks.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cores/main.cpp" />
 		<Unit filename="cores/new.cpp" />
-		<Unit filename="cores/twi.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="cores/wiring.c">
 			<Option compilerVar="CC" />
 		</Unit>
