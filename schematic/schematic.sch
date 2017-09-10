@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:schematic-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
