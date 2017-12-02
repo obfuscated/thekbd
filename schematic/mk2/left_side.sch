@@ -1,0 +1,303 @@
+EESchema Schematic File Version 2
+LIBS:mylib_experimental
+LIBS:arduino
+LIBS:rur
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Micro_Socket ARD?
+U 1 1 5A153725
+P 3500 2400
+F 0 "ARD?" V 3600 2400 60  0000 C CNN
+F 1 "Arduino_Micro_Socket" V 3400 2400 60  0000 C CNN
+F 2 "" H 5300 6150 60  0001 C CNN
+F 3 "" H 5300 6150 60  0001 C CNN
+	1    3500 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4800 2400
+NoConn ~ 2200 2700
+$Comp
+L CONN_01X04 J?
+U 1 1 5A20AD93
+P 1500 1950
+F 0 "J?" H 1500 2200 50  0000 C CNN
+F 1 "CONN_01X04" V 1600 1950 50  0000 C CNN
+F 2 "" H 1500 1950 50  0001 C CNN
+F 3 "" H 1500 1950 50  0001 C CNN
+	1    1500 1950
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2200 1500
+NoConn ~ 2200 1600
+$Comp
+L 74HC4050 U?
+U 1 1 5A20B7AC
+P 7900 3925
+F 0 "U?" H 7900 3425 60  0000 C CNN
+F 1 "74HC4050" H 7900 4375 60  0000 C CNN
+F 2 "" H 7900 3625 60  0000 C CNN
+F 3 "" H 7900 3625 60  0000 C CNN
+	1    7900 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2900 2200 2900
+Wire Wire Line
+	1700 2000 1800 2000
+Wire Wire Line
+	1800 3200 2200 3200
+Wire Wire Line
+	1750 2100 1750 3650
+Wire Wire Line
+	1750 2100 1700 2100
+Wire Wire Line
+	1800 2000 1800 3200
+Wire Wire Line
+	1700 1900 2200 1900
+Wire Wire Line
+	1700 1800 2200 1800
+Wire Wire Line
+	2200 3100 1950 3100
+Wire Wire Line
+	1950 3100 1950 3550
+Wire Wire Line
+	1950 3550 5000 3550
+Wire Wire Line
+	6525 3575 7350 3575
+Wire Wire Line
+	6525 4275 7350 4275
+Connection ~ 1750 2900
+Wire Wire Line
+	8400 3300 7200 3300
+Wire Wire Line
+	7200 3300 7200 3575
+Connection ~ 7200 3575
+Wire Wire Line
+	8500 3350 7250 3350
+Wire Wire Line
+	7250 3350 7250 4275
+Connection ~ 7250 4275
+$Comp
+L TFT128x64 U?
+U 1 1 5A20C231
+P 8150 2350
+F 0 "U?" V 8150 2500 60  0000 C CNN
+F 1 "TFT128x64" V 8300 2500 60  0000 C CNN
+F 2 "" V 8300 2500 60  0001 C CNN
+F 3 "" V 8300 2500 60  0001 C CNN
+	1    8150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3300 8400 3000
+Wire Wire Line
+	8500 3350 8500 3000
+Wire Wire Line
+	8300 3000 8300 3250
+Wire Wire Line
+	8300 3250 7050 3250
+Wire Wire Line
+	7050 3250 7050 3675
+Wire Wire Line
+	7050 3675 7350 3675
+Wire Wire Line
+	8200 3000 8200 3200
+Wire Wire Line
+	8200 3200 7000 3200
+Wire Wire Line
+	7000 3200 7000 3875
+Wire Wire Line
+	7000 3875 7350 3875
+Wire Wire Line
+	8100 3000 8100 3150
+Wire Wire Line
+	8100 3150 6950 3150
+Wire Wire Line
+	6950 3150 6950 4075
+Wire Wire Line
+	6950 4075 7350 4075
+Wire Wire Line
+	8000 3000 8000 3050
+Wire Wire Line
+	8000 3050 8900 3050
+Wire Wire Line
+	8900 3050 8900 4175
+Wire Wire Line
+	8900 4175 8450 4175
+Wire Wire Line
+	7900 3000 7900 3100
+Wire Wire Line
+	7900 3100 8800 3100
+Wire Wire Line
+	8800 3100 8800 3975
+Wire Wire Line
+	8800 3975 8450 3975
+NoConn ~ 8450 3675
+NoConn ~ 8450 3775
+Wire Wire Line
+	4800 2700 5325 2700
+Wire Wire Line
+	4800 2800 5325 2800
+Wire Wire Line
+	4800 1600 5125 1600
+Wire Wire Line
+	5125 1600 5125 3000
+Wire Wire Line
+	5125 3000 5325 3000
+$Comp
+L C C?
+U 1 1 5A21B12B
+P 6525 3900
+F 0 "C?" H 6550 4000 50  0000 L CNN
+F 1 "0.1uF" H 6550 3800 50  0000 L CNN
+F 2 "" H 6563 3750 50  0001 C CNN
+F 3 "" H 6525 3900 50  0001 C CNN
+	1    6525 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 3750 6525 3575
+Connection ~ 6525 3575
+Wire Wire Line
+	6525 4050 6525 5200
+Connection ~ 6525 4275
+NoConn ~ 4800 3100
+NoConn ~ 4800 3200
+NoConn ~ 4800 3300
+Wire Wire Line
+	4800 1500 5200 1500
+Wire Wire Line
+	5200 1500 5200 2900
+Wire Wire Line
+	5200 2900 5325 2900
+$Comp
+L CONN_01X07 J?
+U 1 1 5A22DA35
+P 7900 5400
+F 0 "J?" H 7900 5800 50  0000 C CNN
+F 1 "CONN_01X07" V 8000 5400 50  0000 C CNN
+F 2 "" H 7900 5400 50  0001 C CNN
+F 3 "" H 7900 5400 50  0001 C CNN
+	1    7900 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X07 J?
+U 1 1 5A22DAF6
+P 5525 2900
+F 0 "J?" H 5525 3300 50  0000 C CNN
+F 1 "CONN_01X07" V 5625 2900 50  0000 C CNN
+F 2 "" H 5525 2900 50  0001 C CNN
+F 3 "" H 5525 2900 50  0001 C CNN
+	1    5525 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3550 5000 3100
+Wire Wire Line
+	5000 3100 5325 3100
+Wire Wire Line
+	5125 3200 5325 3200
+Wire Wire Line
+	5125 3650 5125 3200
+Wire Wire Line
+	1750 3650 5125 3650
+Wire Wire Line
+	6525 5200 7600 5200
+Wire Wire Line
+	6700 3575 6700 5150
+Wire Wire Line
+	6700 5150 7700 5150
+Wire Wire Line
+	7700 5150 7700 5200
+Connection ~ 6700 3575
+Wire Wire Line
+	7350 3775 7100 3775
+Wire Wire Line
+	7100 3775 7100 4900
+Wire Wire Line
+	7100 4900 8000 4900
+Wire Wire Line
+	8000 4900 8000 5200
+Wire Wire Line
+	7350 3975 7200 3975
+Wire Wire Line
+	7200 3975 7200 4800
+Wire Wire Line
+	7200 4800 8100 4800
+Wire Wire Line
+	8100 4800 8100 5200
+Wire Wire Line
+	4800 2900 5050 2900
+Wire Wire Line
+	5050 2900 5050 2600
+Wire Wire Line
+	5050 2600 5325 2600
+NoConn ~ 4800 2600
+Wire Wire Line
+	7350 4175 7300 4175
+Wire Wire Line
+	7300 4175 7300 4550
+Wire Wire Line
+	7300 4550 8200 4550
+Wire Wire Line
+	8200 4550 8200 5200
+Wire Wire Line
+	7900 5200 7900 5150
+Wire Wire Line
+	7900 5150 8800 5150
+Wire Wire Line
+	8800 5150 8800 4075
+Wire Wire Line
+	8800 4075 8450 4075
+Wire Wire Line
+	7800 5200 7800 5100
+Wire Wire Line
+	7800 5100 8750 5100
+Wire Wire Line
+	8750 5100 8750 4275
+Wire Wire Line
+	8750 4275 8450 4275
+$EndSCHEMATC
