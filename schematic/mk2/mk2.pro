@@ -1,4 +1,4 @@
-update=Fri 01 Dec 2017 03:08:37 AM EET
+update=Sun 03 Dec 2017 03:10:09 AM EET
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+LibName31=lib_sch/mylib_experimental
+LibName32=lib_sch/rur

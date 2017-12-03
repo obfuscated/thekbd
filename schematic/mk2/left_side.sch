@@ -31,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:left_side-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -58,17 +59,6 @@ F 3 "" H 5300 6150 60  0001 C CNN
 $EndComp
 NoConn ~ 4800 2400
 NoConn ~ 2200 2700
-$Comp
-L CONN_01X04 J?
-U 1 1 5A20AD93
-P 1500 1950
-F 0 "J?" H 1500 2200 50  0000 C CNN
-F 1 "CONN_01X04" V 1600 1950 50  0000 C CNN
-F 2 "" H 1500 1950 50  0001 C CNN
-F 3 "" H 1500 1950 50  0001 C CNN
-	1    1500 1950
-	-1   0    0    1   
-$EndComp
 NoConn ~ 2200 1500
 NoConn ~ 2200 1600
 $Comp
@@ -300,4 +290,12 @@ Wire Wire Line
 	8750 5100 8750 4275
 Wire Wire Line
 	8750 4275 8450 4275
+Text HLabel 1700 1800 0    60   BiDi ~ 0
+SDA
+Text HLabel 1700 1900 0    60   BiDi ~ 0
+SCL
+Text HLabel 1700 2000 0    60   BiDi ~ 0
+5V
+Text HLabel 1700 2100 0    60   BiDi ~ 0
+GND
 $EndSCHEMATC
