@@ -43,4 +43,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 825  1100 0    60   Input ~ 0
+SDA
+Text HLabel 825  1200 0    60   Input ~ 0
+SCL
+Text HLabel 825  1300 0    60   Input ~ 0
+5V
+Text HLabel 825  1400 0    60   Input ~ 0
+GND
 $EndSCHEMATC
