@@ -17,4 +17,14 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP D
+D Diode
+K diode
+$ENDCMP
+#
+$CMP R
+D Resistor
+K r res resistor
+$ENDCMP
+#
 #End Doc Library
