@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:mylib_experimental
-LIBS:arduino
-LIBS:rur
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -31,12 +29,11 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:left_side-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -113,6 +110,8 @@ $Comp
 L TFT128x64 U?
 U 1 1 5A20C231
 P 8150 2350
+AR Path="/5A20C231" Ref="U?"  Part="1" 
+AR Path="/5A14AEE6/5A20C231" Ref="U?"  Part="1" 
 F 0 "U?" V 8150 2500 60  0000 C CNN
 F 1 "TFT128x64" V 8300 2500 60  0000 C CNN
 F 2 "" V 8300 2500 60  0001 C CNN
