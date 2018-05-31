@@ -6,6 +6,11 @@ K Arduino MPU Shield
 F https://www.arduino.cc/en/Main/ArduinoBoardMicro
 $ENDCMP
 #
+$CMP C
+D Unpolarized capacitor
+K cap capacitor
+$ENDCMP
+#
 $CMP Conn_01x07
 D Generic connector, single row, 01x07
 K connector
