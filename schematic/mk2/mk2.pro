@@ -1,4 +1,4 @@
-update=Sun 03 Dec 2017 03:10:09 AM EET
+update=Thu 31 May 2018 09:15:34 AM EEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -29,7 +29,7 @@ version=1
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=arduino-kicad-library/arduino
+LibName1=lib_sch/mylib_experimental
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -59,5 +59,3 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=lib_sch/mylib_experimental
-LibName32=lib_sch/rur
