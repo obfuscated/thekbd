@@ -192,11 +192,13 @@ namespace MCP23017
     {
         Wire.begin(); // wake up I2C bus
 
-        writeRegister(IODIRA, 0x00);
+        writeRegister(IODIRA, 0x00); // output A
 
-        writeRegister(IODIRB, 0xFF);
+        writeRegister(IODIRB, 0xFF); // input B
+        // Enable pull up resistors (100k). This causes the circuits for open switches to register
+        // as 1 before the reversal of polarity.
         writeRegister(GPPUB, 0xFF);
-        writeRegister(IPOLB, 0xFF);
+        writeRegister(IPOLB, 0xFF); // reverse the polarity of the input
     }
 
     void iterate(PressedState &pressedState, uint8_t offsetColumn)
