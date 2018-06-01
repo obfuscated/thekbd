@@ -11,6 +11,12 @@ D Unpolarized capacitor
 K cap capacitor
 $ENDCMP
 #
+$CMP Conn_01x06
+D Generic connector, single row, 01x06
+K connector
+F ~
+$ENDCMP
+#
 $CMP Conn_01x07
 D Generic connector, single row, 01x07
 K connector
