@@ -227,28 +227,6 @@ F 3 "" H 6075 4975 50  0001 C CNN
 	1    6075 4975
 	1    0    0    -1  
 $EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B11E6BC
-P 5825 6050
-F 0 "SW?" H 5975 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 5825 5970 50  0000 C CNN
-F 2 "" H 5825 6050 50  0000 C CNN
-F 3 "" H 5825 6050 50  0000 C CNN
-	1    5825 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B11E6C2
-P 6075 5750
-F 0 "D?" H 6075 5850 50  0000 C CNN
-F 1 "D" H 6075 5650 50  0000 C CNN
-F 2 "" H 6075 5750 50  0001 C CNN
-F 3 "" H 6075 5750 50  0001 C CNN
-	1    6075 5750
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4650 1650
 $Comp
 L SW_PUSH SW?
@@ -380,28 +358,6 @@ F 1 "D" H 6725 4875 50  0000 C CNN
 F 2 "" H 6725 4975 50  0001 C CNN
 F 3 "" H 6725 4975 50  0001 C CNN
 	1    6725 4975
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B1205F6
-P 6475 6050
-F 0 "SW?" H 6625 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 6475 5970 50  0000 C CNN
-F 2 "" H 6475 6050 50  0000 C CNN
-F 3 "" H 6475 6050 50  0000 C CNN
-	1    6475 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B1205FC
-P 6725 5750
-F 0 "D?" H 6725 5850 50  0000 C CNN
-F 1 "D" H 6725 5650 50  0000 C CNN
-F 2 "" H 6725 5750 50  0001 C CNN
-F 3 "" H 6725 5750 50  0001 C CNN
-	1    6725 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -538,28 +494,6 @@ F 3 "" H 7375 4975 50  0001 C CNN
 $EndComp
 $Comp
 L SW_PUSH SW?
-U 1 1 5B121C79
-P 7125 6050
-F 0 "SW?" H 7275 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 7125 5970 50  0000 C CNN
-F 2 "" H 7125 6050 50  0000 C CNN
-F 3 "" H 7125 6050 50  0000 C CNN
-	1    7125 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B121C7F
-P 7375 5750
-F 0 "D?" H 7375 5850 50  0000 C CNN
-F 1 "D" H 7375 5650 50  0000 C CNN
-F 2 "" H 7375 5750 50  0001 C CNN
-F 3 "" H 7375 5750 50  0001 C CNN
-	1    7375 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
 U 1 1 5B121C86
 P 7775 1400
 F 0 "SW?" H 7925 1510 50  0000 C CNN
@@ -688,28 +622,6 @@ F 1 "D" H 8025 4875 50  0000 C CNN
 F 2 "" H 8025 4975 50  0001 C CNN
 F 3 "" H 8025 4975 50  0001 C CNN
 	1    8025 4975
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B121CD4
-P 7775 6050
-F 0 "SW?" H 7925 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 7775 5970 50  0000 C CNN
-F 2 "" H 7775 6050 50  0000 C CNN
-F 3 "" H 7775 6050 50  0000 C CNN
-	1    7775 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B121CDA
-P 8025 5750
-F 0 "D?" H 8025 5850 50  0000 C CNN
-F 1 "D" H 8025 5650 50  0000 C CNN
-F 2 "" H 8025 5750 50  0001 C CNN
-F 3 "" H 8025 5750 50  0001 C CNN
-	1    8025 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -846,28 +758,6 @@ F 3 "" H 8675 4975 50  0001 C CNN
 $EndComp
 $Comp
 L SW_PUSH SW?
-U 1 1 5B125569
-P 8425 6050
-F 0 "SW?" H 8575 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 8425 5970 50  0000 C CNN
-F 2 "" H 8425 6050 50  0000 C CNN
-F 3 "" H 8425 6050 50  0000 C CNN
-	1    8425 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B12556F
-P 8675 5750
-F 0 "D?" H 8675 5850 50  0000 C CNN
-F 1 "D" H 8675 5650 50  0000 C CNN
-F 2 "" H 8675 5750 50  0001 C CNN
-F 3 "" H 8675 5750 50  0001 C CNN
-	1    8675 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
 U 1 1 5B125576
 P 9075 1400
 F 0 "SW?" H 9225 1510 50  0000 C CNN
@@ -996,28 +886,6 @@ F 1 "D" H 9325 4875 50  0000 C CNN
 F 2 "" H 9325 4975 50  0001 C CNN
 F 3 "" H 9325 4975 50  0001 C CNN
 	1    9325 4975
-	1    0    0    -1  
-$EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B1255C4
-P 9075 6050
-F 0 "SW?" H 9225 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 9075 5970 50  0000 C CNN
-F 2 "" H 9075 6050 50  0000 C CNN
-F 3 "" H 9075 6050 50  0000 C CNN
-	1    9075 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B1255CA
-P 9325 5750
-F 0 "D?" H 9325 5850 50  0000 C CNN
-F 1 "D" H 9325 5650 50  0000 C CNN
-F 2 "" H 9325 5750 50  0001 C CNN
-F 3 "" H 9325 5750 50  0001 C CNN
-	1    9325 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1152,28 +1020,6 @@ F 3 "" H 9975 4975 50  0001 C CNN
 	1    9975 4975
 	1    0    0    -1  
 $EndComp
-$Comp
-L SW_PUSH SW?
-U 1 1 5B12561F
-P 9725 6050
-F 0 "SW?" H 9875 6160 50  0000 C CNN
-F 1 "SW_PUSH" H 9725 5970 50  0000 C CNN
-F 2 "" H 9725 6050 50  0000 C CNN
-F 3 "" H 9725 6050 50  0000 C CNN
-	1    9725 6050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L D D?
-U 1 1 5B125625
-P 9975 5750
-F 0 "D?" H 9975 5850 50  0000 C CNN
-F 1 "D" H 9975 5650 50  0000 C CNN
-F 2 "" H 9975 5750 50  0001 C CNN
-F 3 "" H 9975 5750 50  0001 C CNN
-	1    9975 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 3900 3700 3900
 Wire Wire Line
@@ -1258,8 +1104,6 @@ Wire Wire Line
 Wire Wire Line
 	5825 4975 5925 4975
 Wire Wire Line
-	5825 5750 5925 5750
-Wire Wire Line
 	4650 1750 4725 1750
 Wire Wire Line
 	4725 1750 4725 750 
@@ -1322,10 +1166,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 3000 5350 5575
 Wire Wire Line
-	4650 3100 5325 3100
-Wire Wire Line
-	5325 3100 5325 6350
-Wire Wire Line
 	6475 1100 6575 1100
 Wire Wire Line
 	6475 1850 6575 1850
@@ -1337,8 +1177,6 @@ Wire Wire Line
 	6475 4200 6575 4200
 Wire Wire Line
 	6475 4975 6575 4975
-Wire Wire Line
-	6475 5750 6575 5750
 Wire Wire Line
 	7125 1100 7225 1100
 Wire Wire Line
@@ -1352,8 +1190,6 @@ Wire Wire Line
 Wire Wire Line
 	7125 4975 7225 4975
 Wire Wire Line
-	7125 5750 7225 5750
-Wire Wire Line
 	7775 1100 7875 1100
 Wire Wire Line
 	7775 1850 7875 1850
@@ -1365,8 +1201,6 @@ Wire Wire Line
 	7775 4200 7875 4200
 Wire Wire Line
 	7775 4975 7875 4975
-Wire Wire Line
-	7775 5750 7875 5750
 Wire Wire Line
 	8425 1100 8525 1100
 Wire Wire Line
@@ -1380,8 +1214,6 @@ Wire Wire Line
 Wire Wire Line
 	8425 4975 8525 4975
 Wire Wire Line
-	8425 5750 8525 5750
-Wire Wire Line
 	9075 1100 9175 1100
 Wire Wire Line
 	9075 1850 9175 1850
@@ -1394,8 +1226,6 @@ Wire Wire Line
 Wire Wire Line
 	9075 4975 9175 4975
 Wire Wire Line
-	9075 5750 9175 5750
-Wire Wire Line
 	9725 1100 9825 1100
 Wire Wire Line
 	9725 1850 9825 1850
@@ -1407,28 +1237,6 @@ Wire Wire Line
 	9725 4200 9825 4200
 Wire Wire Line
 	9725 4975 9825 4975
-Wire Wire Line
-	9725 5750 9825 5750
-Wire Wire Line
-	5325 6350 5825 6350
-Wire Wire Line
-	5825 6350 6475 6350
-Wire Wire Line
-	6475 6350 7125 6350
-Wire Wire Line
-	7125 6350 7775 6350
-Wire Wire Line
-	7775 6350 8425 6350
-Wire Wire Line
-	8425 6350 9075 6350
-Wire Wire Line
-	9075 6350 9725 6350
-Connection ~ 5825 6350
-Connection ~ 6475 6350
-Connection ~ 7125 6350
-Connection ~ 7775 6350
-Connection ~ 8425 6350
-Connection ~ 9075 6350
 Wire Wire Line
 	5350 5575 5825 5575
 Wire Wire Line
@@ -1544,20 +1352,6 @@ Connection ~ 8425 4800
 Connection ~ 9075 4800
 Connection ~ 9075 2450
 Connection ~ 9075 1700
-Wire Wire Line
-	6225 900  6225 1100
-Wire Wire Line
-	6225 1100 6225 1850
-Wire Wire Line
-	6225 1850 6225 2600
-Wire Wire Line
-	6225 2600 6225 3400
-Wire Wire Line
-	6225 3400 6225 4200
-Wire Wire Line
-	6225 4200 6225 4975
-Wire Wire Line
-	6225 4975 6225 5750
 Connection ~ 6225 1100
 Connection ~ 6225 1850
 Connection ~ 6225 2600
@@ -1577,8 +1371,6 @@ Wire Wire Line
 Wire Wire Line
 	6875 4200 6875 4975
 Wire Wire Line
-	6875 4975 6875 5750
-Wire Wire Line
 	7525 850  7525 1100
 Wire Wire Line
 	7525 1100 7525 1850
@@ -1590,8 +1382,6 @@ Wire Wire Line
 	7525 3400 7525 4200
 Wire Wire Line
 	7525 4200 7525 4975
-Wire Wire Line
-	7525 4975 7525 5750
 Wire Wire Line
 	8175 825  8175 1100
 Wire Wire Line
@@ -1605,8 +1395,6 @@ Wire Wire Line
 Wire Wire Line
 	8175 4200 8175 4975
 Wire Wire Line
-	8175 4975 8175 5750
-Wire Wire Line
 	8825 800  8825 1100
 Wire Wire Line
 	8825 1100 8825 1850
@@ -1619,8 +1407,6 @@ Wire Wire Line
 Wire Wire Line
 	8825 4200 8825 4975
 Wire Wire Line
-	8825 4975 8825 5750
-Wire Wire Line
 	9475 775  9475 1100
 Wire Wire Line
 	9475 1100 9475 1850
@@ -1632,8 +1418,6 @@ Wire Wire Line
 	9475 3400 9475 4200
 Wire Wire Line
 	9475 4200 9475 4975
-Wire Wire Line
-	9475 4975 9475 5750
 Connection ~ 9475 4975
 Connection ~ 8825 4975
 Connection ~ 8175 4975
@@ -1656,8 +1440,6 @@ Wire Wire Line
 	10125 3400 10125 4200
 Wire Wire Line
 	10125 4200 10125 4975
-Wire Wire Line
-	10125 4975 10125 5750
 Connection ~ 10125 4200
 Connection ~ 9475 3400
 Connection ~ 10125 3400
@@ -1693,4 +1475,1542 @@ Connection ~ 10125 4975
 Connection ~ 5825 1700
 Connection ~ 5825 2450
 Connection ~ 5825 3200
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1408D1
+P -3125 -9800
+F 0 "SW?" H -2975 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -9880 50  0000 C CNN
+F 2 "" H -3125 -9800 50  0000 C CNN
+F 3 "" H -3125 -9800 50  0000 C CNN
+	1    -3125 -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1408D7
+P -2875 -10100
+F 0 "D?" H -2875 -10000 50  0000 C CNN
+F 1 "D" H -2875 -10200 50  0000 C CNN
+F 2 "" H -2875 -10100 50  0001 C CNN
+F 3 "" H -2875 -10100 50  0001 C CNN
+	1    -2875 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1408DD
+P -3125 -9050
+F 0 "SW?" H -2975 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -9130 50  0000 C CNN
+F 2 "" H -3125 -9050 50  0000 C CNN
+F 3 "" H -3125 -9050 50  0000 C CNN
+	1    -3125 -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1408E3
+P -2875 -9350
+F 0 "D?" H -2875 -9250 50  0000 C CNN
+F 1 "D" H -2875 -9450 50  0000 C CNN
+F 2 "" H -2875 -9350 50  0001 C CNN
+F 3 "" H -2875 -9350 50  0001 C CNN
+	1    -2875 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1408E9
+P -3125 -8300
+F 0 "SW?" H -2975 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -8380 50  0000 C CNN
+F 2 "" H -3125 -8300 50  0000 C CNN
+F 3 "" H -3125 -8300 50  0000 C CNN
+	1    -3125 -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1408EF
+P -2875 -8600
+F 0 "D?" H -2875 -8500 50  0000 C CNN
+F 1 "D" H -2875 -8700 50  0000 C CNN
+F 2 "" H -2875 -8600 50  0001 C CNN
+F 3 "" H -2875 -8600 50  0001 C CNN
+	1    -2875 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1408F5
+P -3125 -7500
+F 0 "SW?" H -2975 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -7580 50  0000 C CNN
+F 2 "" H -3125 -7500 50  0000 C CNN
+F 3 "" H -3125 -7500 50  0000 C CNN
+	1    -3125 -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1408FB
+P -2875 -7800
+F 0 "D?" H -2875 -7700 50  0000 C CNN
+F 1 "D" H -2875 -7900 50  0000 C CNN
+F 2 "" H -2875 -7800 50  0001 C CNN
+F 3 "" H -2875 -7800 50  0001 C CNN
+	1    -2875 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140901
+P -3125 -6700
+F 0 "SW?" H -2975 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -6780 50  0000 C CNN
+F 2 "" H -3125 -6700 50  0000 C CNN
+F 3 "" H -3125 -6700 50  0000 C CNN
+	1    -3125 -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140907
+P -2875 -7000
+F 0 "D?" H -2875 -6900 50  0000 C CNN
+F 1 "D" H -2875 -7100 50  0000 C CNN
+F 2 "" H -2875 -7000 50  0001 C CNN
+F 3 "" H -2875 -7000 50  0001 C CNN
+	1    -2875 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B14090D
+P -3125 -5925
+F 0 "SW?" H -2975 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -6005 50  0000 C CNN
+F 2 "" H -3125 -5925 50  0000 C CNN
+F 3 "" H -3125 -5925 50  0000 C CNN
+	1    -3125 -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140913
+P -2875 -6225
+F 0 "D?" H -2875 -6125 50  0000 C CNN
+F 1 "D" H -2875 -6325 50  0000 C CNN
+F 2 "" H -2875 -6225 50  0001 C CNN
+F 3 "" H -2875 -6225 50  0001 C CNN
+	1    -2875 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140919
+P -3125 -5150
+F 0 "SW?" H -2975 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H -3125 -5230 50  0000 C CNN
+F 2 "" H -3125 -5150 50  0000 C CNN
+F 3 "" H -3125 -5150 50  0000 C CNN
+	1    -3125 -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14091F
+P -2875 -5450
+F 0 "D?" H -2875 -5350 50  0000 C CNN
+F 1 "D" H -2875 -5550 50  0000 C CNN
+F 2 "" H -2875 -5450 50  0001 C CNN
+F 3 "" H -2875 -5450 50  0001 C CNN
+	1    -2875 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140925
+P -2475 -9800
+F 0 "SW?" H -2325 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -9880 50  0000 C CNN
+F 2 "" H -2475 -9800 50  0000 C CNN
+F 3 "" H -2475 -9800 50  0000 C CNN
+	1    -2475 -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14092B
+P -2225 -10100
+F 0 "D?" H -2225 -10000 50  0000 C CNN
+F 1 "D" H -2225 -10200 50  0000 C CNN
+F 2 "" H -2225 -10100 50  0001 C CNN
+F 3 "" H -2225 -10100 50  0001 C CNN
+	1    -2225 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140931
+P -2475 -9050
+F 0 "SW?" H -2325 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -9130 50  0000 C CNN
+F 2 "" H -2475 -9050 50  0000 C CNN
+F 3 "" H -2475 -9050 50  0000 C CNN
+	1    -2475 -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140937
+P -2225 -9350
+F 0 "D?" H -2225 -9250 50  0000 C CNN
+F 1 "D" H -2225 -9450 50  0000 C CNN
+F 2 "" H -2225 -9350 50  0001 C CNN
+F 3 "" H -2225 -9350 50  0001 C CNN
+	1    -2225 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B14093D
+P -2475 -8300
+F 0 "SW?" H -2325 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -8380 50  0000 C CNN
+F 2 "" H -2475 -8300 50  0000 C CNN
+F 3 "" H -2475 -8300 50  0000 C CNN
+	1    -2475 -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140943
+P -2225 -8600
+F 0 "D?" H -2225 -8500 50  0000 C CNN
+F 1 "D" H -2225 -8700 50  0000 C CNN
+F 2 "" H -2225 -8600 50  0001 C CNN
+F 3 "" H -2225 -8600 50  0001 C CNN
+	1    -2225 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140949
+P -2475 -7500
+F 0 "SW?" H -2325 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -7580 50  0000 C CNN
+F 2 "" H -2475 -7500 50  0000 C CNN
+F 3 "" H -2475 -7500 50  0000 C CNN
+	1    -2475 -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14094F
+P -2225 -7800
+F 0 "D?" H -2225 -7700 50  0000 C CNN
+F 1 "D" H -2225 -7900 50  0000 C CNN
+F 2 "" H -2225 -7800 50  0001 C CNN
+F 3 "" H -2225 -7800 50  0001 C CNN
+	1    -2225 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140955
+P -2475 -6700
+F 0 "SW?" H -2325 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -6780 50  0000 C CNN
+F 2 "" H -2475 -6700 50  0000 C CNN
+F 3 "" H -2475 -6700 50  0000 C CNN
+	1    -2475 -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14095B
+P -2225 -7000
+F 0 "D?" H -2225 -6900 50  0000 C CNN
+F 1 "D" H -2225 -7100 50  0000 C CNN
+F 2 "" H -2225 -7000 50  0001 C CNN
+F 3 "" H -2225 -7000 50  0001 C CNN
+	1    -2225 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140961
+P -2475 -5925
+F 0 "SW?" H -2325 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -6005 50  0000 C CNN
+F 2 "" H -2475 -5925 50  0000 C CNN
+F 3 "" H -2475 -5925 50  0000 C CNN
+	1    -2475 -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140967
+P -2225 -6225
+F 0 "D?" H -2225 -6125 50  0000 C CNN
+F 1 "D" H -2225 -6325 50  0000 C CNN
+F 2 "" H -2225 -6225 50  0001 C CNN
+F 3 "" H -2225 -6225 50  0001 C CNN
+	1    -2225 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B14096D
+P -2475 -5150
+F 0 "SW?" H -2325 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H -2475 -5230 50  0000 C CNN
+F 2 "" H -2475 -5150 50  0000 C CNN
+F 3 "" H -2475 -5150 50  0000 C CNN
+	1    -2475 -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140973
+P -2225 -5450
+F 0 "D?" H -2225 -5350 50  0000 C CNN
+F 1 "D" H -2225 -5550 50  0000 C CNN
+F 2 "" H -2225 -5450 50  0001 C CNN
+F 3 "" H -2225 -5450 50  0001 C CNN
+	1    -2225 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140979
+P -1825 -9800
+F 0 "SW?" H -1675 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -9880 50  0000 C CNN
+F 2 "" H -1825 -9800 50  0000 C CNN
+F 3 "" H -1825 -9800 50  0000 C CNN
+	1    -1825 -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14097F
+P -1575 -10100
+F 0 "D?" H -1575 -10000 50  0000 C CNN
+F 1 "D" H -1575 -10200 50  0000 C CNN
+F 2 "" H -1575 -10100 50  0001 C CNN
+F 3 "" H -1575 -10100 50  0001 C CNN
+	1    -1575 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140985
+P -1825 -9050
+F 0 "SW?" H -1675 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -9130 50  0000 C CNN
+F 2 "" H -1825 -9050 50  0000 C CNN
+F 3 "" H -1825 -9050 50  0000 C CNN
+	1    -1825 -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B14098B
+P -1575 -9350
+F 0 "D?" H -1575 -9250 50  0000 C CNN
+F 1 "D" H -1575 -9450 50  0000 C CNN
+F 2 "" H -1575 -9350 50  0001 C CNN
+F 3 "" H -1575 -9350 50  0001 C CNN
+	1    -1575 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140991
+P -1825 -8300
+F 0 "SW?" H -1675 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -8380 50  0000 C CNN
+F 2 "" H -1825 -8300 50  0000 C CNN
+F 3 "" H -1825 -8300 50  0000 C CNN
+	1    -1825 -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140997
+P -1575 -8600
+F 0 "D?" H -1575 -8500 50  0000 C CNN
+F 1 "D" H -1575 -8700 50  0000 C CNN
+F 2 "" H -1575 -8600 50  0001 C CNN
+F 3 "" H -1575 -8600 50  0001 C CNN
+	1    -1575 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B14099D
+P -1825 -7500
+F 0 "SW?" H -1675 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -7580 50  0000 C CNN
+F 2 "" H -1825 -7500 50  0000 C CNN
+F 3 "" H -1825 -7500 50  0000 C CNN
+	1    -1825 -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409A3
+P -1575 -7800
+F 0 "D?" H -1575 -7700 50  0000 C CNN
+F 1 "D" H -1575 -7900 50  0000 C CNN
+F 2 "" H -1575 -7800 50  0001 C CNN
+F 3 "" H -1575 -7800 50  0001 C CNN
+	1    -1575 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409A9
+P -1825 -6700
+F 0 "SW?" H -1675 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -6780 50  0000 C CNN
+F 2 "" H -1825 -6700 50  0000 C CNN
+F 3 "" H -1825 -6700 50  0000 C CNN
+	1    -1825 -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409AF
+P -1575 -7000
+F 0 "D?" H -1575 -6900 50  0000 C CNN
+F 1 "D" H -1575 -7100 50  0000 C CNN
+F 2 "" H -1575 -7000 50  0001 C CNN
+F 3 "" H -1575 -7000 50  0001 C CNN
+	1    -1575 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409B5
+P -1825 -5925
+F 0 "SW?" H -1675 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -6005 50  0000 C CNN
+F 2 "" H -1825 -5925 50  0000 C CNN
+F 3 "" H -1825 -5925 50  0000 C CNN
+	1    -1825 -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409BB
+P -1575 -6225
+F 0 "D?" H -1575 -6125 50  0000 C CNN
+F 1 "D" H -1575 -6325 50  0000 C CNN
+F 2 "" H -1575 -6225 50  0001 C CNN
+F 3 "" H -1575 -6225 50  0001 C CNN
+	1    -1575 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409C1
+P -1825 -5150
+F 0 "SW?" H -1675 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H -1825 -5230 50  0000 C CNN
+F 2 "" H -1825 -5150 50  0000 C CNN
+F 3 "" H -1825 -5150 50  0000 C CNN
+	1    -1825 -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409C7
+P -1575 -5450
+F 0 "D?" H -1575 -5350 50  0000 C CNN
+F 1 "D" H -1575 -5550 50  0000 C CNN
+F 2 "" H -1575 -5450 50  0001 C CNN
+F 3 "" H -1575 -5450 50  0001 C CNN
+	1    -1575 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409CD
+P -1175 -9800
+F 0 "SW?" H -1025 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -9880 50  0000 C CNN
+F 2 "" H -1175 -9800 50  0000 C CNN
+F 3 "" H -1175 -9800 50  0000 C CNN
+	1    -1175 -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409D3
+P -925 -10100
+F 0 "D?" H -925 -10000 50  0000 C CNN
+F 1 "D" H -925 -10200 50  0000 C CNN
+F 2 "" H -925 -10100 50  0001 C CNN
+F 3 "" H -925 -10100 50  0001 C CNN
+	1    -925 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409D9
+P -1175 -9050
+F 0 "SW?" H -1025 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -9130 50  0000 C CNN
+F 2 "" H -1175 -9050 50  0000 C CNN
+F 3 "" H -1175 -9050 50  0000 C CNN
+	1    -1175 -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409DF
+P -925 -9350
+F 0 "D?" H -925 -9250 50  0000 C CNN
+F 1 "D" H -925 -9450 50  0000 C CNN
+F 2 "" H -925 -9350 50  0001 C CNN
+F 3 "" H -925 -9350 50  0001 C CNN
+	1    -925 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409E5
+P -1175 -8300
+F 0 "SW?" H -1025 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -8380 50  0000 C CNN
+F 2 "" H -1175 -8300 50  0000 C CNN
+F 3 "" H -1175 -8300 50  0000 C CNN
+	1    -1175 -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409EB
+P -925 -8600
+F 0 "D?" H -925 -8500 50  0000 C CNN
+F 1 "D" H -925 -8700 50  0000 C CNN
+F 2 "" H -925 -8600 50  0001 C CNN
+F 3 "" H -925 -8600 50  0001 C CNN
+	1    -925 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409F1
+P -1175 -7500
+F 0 "SW?" H -1025 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -7580 50  0000 C CNN
+F 2 "" H -1175 -7500 50  0000 C CNN
+F 3 "" H -1175 -7500 50  0000 C CNN
+	1    -1175 -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B1409F7
+P -925 -7800
+F 0 "D?" H -925 -7700 50  0000 C CNN
+F 1 "D" H -925 -7900 50  0000 C CNN
+F 2 "" H -925 -7800 50  0001 C CNN
+F 3 "" H -925 -7800 50  0001 C CNN
+	1    -925 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B1409FD
+P -1175 -6700
+F 0 "SW?" H -1025 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -6780 50  0000 C CNN
+F 2 "" H -1175 -6700 50  0000 C CNN
+F 3 "" H -1175 -6700 50  0000 C CNN
+	1    -1175 -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A03
+P -925 -7000
+F 0 "D?" H -925 -6900 50  0000 C CNN
+F 1 "D" H -925 -7100 50  0000 C CNN
+F 2 "" H -925 -7000 50  0001 C CNN
+F 3 "" H -925 -7000 50  0001 C CNN
+	1    -925 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A09
+P -1175 -5925
+F 0 "SW?" H -1025 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -6005 50  0000 C CNN
+F 2 "" H -1175 -5925 50  0000 C CNN
+F 3 "" H -1175 -5925 50  0000 C CNN
+	1    -1175 -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A0F
+P -925 -6225
+F 0 "D?" H -925 -6125 50  0000 C CNN
+F 1 "D" H -925 -6325 50  0000 C CNN
+F 2 "" H -925 -6225 50  0001 C CNN
+F 3 "" H -925 -6225 50  0001 C CNN
+	1    -925 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A15
+P -1175 -5150
+F 0 "SW?" H -1025 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H -1175 -5230 50  0000 C CNN
+F 2 "" H -1175 -5150 50  0000 C CNN
+F 3 "" H -1175 -5150 50  0000 C CNN
+	1    -1175 -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A1B
+P -925 -5450
+F 0 "D?" H -925 -5350 50  0000 C CNN
+F 1 "D" H -925 -5550 50  0000 C CNN
+F 2 "" H -925 -5450 50  0001 C CNN
+F 3 "" H -925 -5450 50  0001 C CNN
+	1    -925 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A21
+P -525 -9800
+F 0 "SW?" H -375 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -9880 50  0000 C CNN
+F 2 "" H -525 -9800 50  0000 C CNN
+F 3 "" H -525 -9800 50  0000 C CNN
+	1    -525 -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A27
+P -275 -10100
+F 0 "D?" H -275 -10000 50  0000 C CNN
+F 1 "D" H -275 -10200 50  0000 C CNN
+F 2 "" H -275 -10100 50  0001 C CNN
+F 3 "" H -275 -10100 50  0001 C CNN
+	1    -275 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A2D
+P -525 -9050
+F 0 "SW?" H -375 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -9130 50  0000 C CNN
+F 2 "" H -525 -9050 50  0000 C CNN
+F 3 "" H -525 -9050 50  0000 C CNN
+	1    -525 -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A33
+P -275 -9350
+F 0 "D?" H -275 -9250 50  0000 C CNN
+F 1 "D" H -275 -9450 50  0000 C CNN
+F 2 "" H -275 -9350 50  0001 C CNN
+F 3 "" H -275 -9350 50  0001 C CNN
+	1    -275 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A39
+P -525 -8300
+F 0 "SW?" H -375 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -8380 50  0000 C CNN
+F 2 "" H -525 -8300 50  0000 C CNN
+F 3 "" H -525 -8300 50  0000 C CNN
+	1    -525 -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A3F
+P -275 -8600
+F 0 "D?" H -275 -8500 50  0000 C CNN
+F 1 "D" H -275 -8700 50  0000 C CNN
+F 2 "" H -275 -8600 50  0001 C CNN
+F 3 "" H -275 -8600 50  0001 C CNN
+	1    -275 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A45
+P -525 -7500
+F 0 "SW?" H -375 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -7580 50  0000 C CNN
+F 2 "" H -525 -7500 50  0000 C CNN
+F 3 "" H -525 -7500 50  0000 C CNN
+	1    -525 -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A4B
+P -275 -7800
+F 0 "D?" H -275 -7700 50  0000 C CNN
+F 1 "D" H -275 -7900 50  0000 C CNN
+F 2 "" H -275 -7800 50  0001 C CNN
+F 3 "" H -275 -7800 50  0001 C CNN
+	1    -275 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A51
+P -525 -6700
+F 0 "SW?" H -375 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -6780 50  0000 C CNN
+F 2 "" H -525 -6700 50  0000 C CNN
+F 3 "" H -525 -6700 50  0000 C CNN
+	1    -525 -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A57
+P -275 -7000
+F 0 "D?" H -275 -6900 50  0000 C CNN
+F 1 "D" H -275 -7100 50  0000 C CNN
+F 2 "" H -275 -7000 50  0001 C CNN
+F 3 "" H -275 -7000 50  0001 C CNN
+	1    -275 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A5D
+P -525 -5925
+F 0 "SW?" H -375 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -6005 50  0000 C CNN
+F 2 "" H -525 -5925 50  0000 C CNN
+F 3 "" H -525 -5925 50  0000 C CNN
+	1    -525 -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A63
+P -275 -6225
+F 0 "D?" H -275 -6125 50  0000 C CNN
+F 1 "D" H -275 -6325 50  0000 C CNN
+F 2 "" H -275 -6225 50  0001 C CNN
+F 3 "" H -275 -6225 50  0001 C CNN
+	1    -275 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A69
+P -525 -5150
+F 0 "SW?" H -375 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H -525 -5230 50  0000 C CNN
+F 2 "" H -525 -5150 50  0000 C CNN
+F 3 "" H -525 -5150 50  0000 C CNN
+	1    -525 -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A6F
+P -275 -5450
+F 0 "D?" H -275 -5350 50  0000 C CNN
+F 1 "D" H -275 -5550 50  0000 C CNN
+F 2 "" H -275 -5450 50  0001 C CNN
+F 3 "" H -275 -5450 50  0001 C CNN
+	1    -275 -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A75
+P 125 -9800
+F 0 "SW?" H 275 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -9880 50  0000 C CNN
+F 2 "" H 125 -9800 50  0000 C CNN
+F 3 "" H 125 -9800 50  0000 C CNN
+	1    125  -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A7B
+P 375 -10100
+F 0 "D?" H 375 -10000 50  0000 C CNN
+F 1 "D" H 375 -10200 50  0000 C CNN
+F 2 "" H 375 -10100 50  0001 C CNN
+F 3 "" H 375 -10100 50  0001 C CNN
+	1    375  -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A81
+P 125 -9050
+F 0 "SW?" H 275 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -9130 50  0000 C CNN
+F 2 "" H 125 -9050 50  0000 C CNN
+F 3 "" H 125 -9050 50  0000 C CNN
+	1    125  -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A87
+P 375 -9350
+F 0 "D?" H 375 -9250 50  0000 C CNN
+F 1 "D" H 375 -9450 50  0000 C CNN
+F 2 "" H 375 -9350 50  0001 C CNN
+F 3 "" H 375 -9350 50  0001 C CNN
+	1    375  -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A8D
+P 125 -8300
+F 0 "SW?" H 275 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -8380 50  0000 C CNN
+F 2 "" H 125 -8300 50  0000 C CNN
+F 3 "" H 125 -8300 50  0000 C CNN
+	1    125  -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A93
+P 375 -8600
+F 0 "D?" H 375 -8500 50  0000 C CNN
+F 1 "D" H 375 -8700 50  0000 C CNN
+F 2 "" H 375 -8600 50  0001 C CNN
+F 3 "" H 375 -8600 50  0001 C CNN
+	1    375  -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140A99
+P 125 -7500
+F 0 "SW?" H 275 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -7580 50  0000 C CNN
+F 2 "" H 125 -7500 50  0000 C CNN
+F 3 "" H 125 -7500 50  0000 C CNN
+	1    125  -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140A9F
+P 375 -7800
+F 0 "D?" H 375 -7700 50  0000 C CNN
+F 1 "D" H 375 -7900 50  0000 C CNN
+F 2 "" H 375 -7800 50  0001 C CNN
+F 3 "" H 375 -7800 50  0001 C CNN
+	1    375  -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AA5
+P 125 -6700
+F 0 "SW?" H 275 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -6780 50  0000 C CNN
+F 2 "" H 125 -6700 50  0000 C CNN
+F 3 "" H 125 -6700 50  0000 C CNN
+	1    125  -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AAB
+P 375 -7000
+F 0 "D?" H 375 -6900 50  0000 C CNN
+F 1 "D" H 375 -7100 50  0000 C CNN
+F 2 "" H 375 -7000 50  0001 C CNN
+F 3 "" H 375 -7000 50  0001 C CNN
+	1    375  -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AB1
+P 125 -5925
+F 0 "SW?" H 275 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -6005 50  0000 C CNN
+F 2 "" H 125 -5925 50  0000 C CNN
+F 3 "" H 125 -5925 50  0000 C CNN
+	1    125  -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AB7
+P 375 -6225
+F 0 "D?" H 375 -6125 50  0000 C CNN
+F 1 "D" H 375 -6325 50  0000 C CNN
+F 2 "" H 375 -6225 50  0001 C CNN
+F 3 "" H 375 -6225 50  0001 C CNN
+	1    375  -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140ABD
+P 125 -5150
+F 0 "SW?" H 275 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H 125 -5230 50  0000 C CNN
+F 2 "" H 125 -5150 50  0000 C CNN
+F 3 "" H 125 -5150 50  0000 C CNN
+	1    125  -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AC3
+P 375 -5450
+F 0 "D?" H 375 -5350 50  0000 C CNN
+F 1 "D" H 375 -5550 50  0000 C CNN
+F 2 "" H 375 -5450 50  0001 C CNN
+F 3 "" H 375 -5450 50  0001 C CNN
+	1    375  -5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AC9
+P 775 -9800
+F 0 "SW?" H 925 -9690 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -9880 50  0000 C CNN
+F 2 "" H 775 -9800 50  0000 C CNN
+F 3 "" H 775 -9800 50  0000 C CNN
+	1    775  -9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140ACF
+P 1025 -10100
+F 0 "D?" H 1025 -10000 50  0000 C CNN
+F 1 "D" H 1025 -10200 50  0000 C CNN
+F 2 "" H 1025 -10100 50  0001 C CNN
+F 3 "" H 1025 -10100 50  0001 C CNN
+	1    1025 -10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AD5
+P 775 -9050
+F 0 "SW?" H 925 -8940 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -9130 50  0000 C CNN
+F 2 "" H 775 -9050 50  0000 C CNN
+F 3 "" H 775 -9050 50  0000 C CNN
+	1    775  -9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140ADB
+P 1025 -9350
+F 0 "D?" H 1025 -9250 50  0000 C CNN
+F 1 "D" H 1025 -9450 50  0000 C CNN
+F 2 "" H 1025 -9350 50  0001 C CNN
+F 3 "" H 1025 -9350 50  0001 C CNN
+	1    1025 -9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AE1
+P 775 -8300
+F 0 "SW?" H 925 -8190 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -8380 50  0000 C CNN
+F 2 "" H 775 -8300 50  0000 C CNN
+F 3 "" H 775 -8300 50  0000 C CNN
+	1    775  -8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AE7
+P 1025 -8600
+F 0 "D?" H 1025 -8500 50  0000 C CNN
+F 1 "D" H 1025 -8700 50  0000 C CNN
+F 2 "" H 1025 -8600 50  0001 C CNN
+F 3 "" H 1025 -8600 50  0001 C CNN
+	1    1025 -8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AED
+P 775 -7500
+F 0 "SW?" H 925 -7390 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -7580 50  0000 C CNN
+F 2 "" H 775 -7500 50  0000 C CNN
+F 3 "" H 775 -7500 50  0000 C CNN
+	1    775  -7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AF3
+P 1025 -7800
+F 0 "D?" H 1025 -7700 50  0000 C CNN
+F 1 "D" H 1025 -7900 50  0000 C CNN
+F 2 "" H 1025 -7800 50  0001 C CNN
+F 3 "" H 1025 -7800 50  0001 C CNN
+	1    1025 -7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140AF9
+P 775 -6700
+F 0 "SW?" H 925 -6590 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -6780 50  0000 C CNN
+F 2 "" H 775 -6700 50  0000 C CNN
+F 3 "" H 775 -6700 50  0000 C CNN
+	1    775  -6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140AFF
+P 1025 -7000
+F 0 "D?" H 1025 -6900 50  0000 C CNN
+F 1 "D" H 1025 -7100 50  0000 C CNN
+F 2 "" H 1025 -7000 50  0001 C CNN
+F 3 "" H 1025 -7000 50  0001 C CNN
+	1    1025 -7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140B05
+P 775 -5925
+F 0 "SW?" H 925 -5815 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -6005 50  0000 C CNN
+F 2 "" H 775 -5925 50  0000 C CNN
+F 3 "" H 775 -5925 50  0000 C CNN
+	1    775  -5925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140B0B
+P 1025 -6225
+F 0 "D?" H 1025 -6125 50  0000 C CNN
+F 1 "D" H 1025 -6325 50  0000 C CNN
+F 2 "" H 1025 -6225 50  0001 C CNN
+F 3 "" H 1025 -6225 50  0001 C CNN
+	1    1025 -6225
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_PUSH SW?
+U 1 1 5B140B11
+P 775 -5150
+F 0 "SW?" H 925 -5040 50  0000 C CNN
+F 1 "SW_PUSH" H 775 -5230 50  0000 C CNN
+F 2 "" H 775 -5150 50  0000 C CNN
+F 3 "" H 775 -5150 50  0000 C CNN
+	1    775  -5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 5B140B17
+P 1025 -5450
+F 0 "D?" H 1025 -5350 50  0000 C CNN
+F 1 "D" H 1025 -5550 50  0000 C CNN
+F 2 "" H 1025 -5450 50  0001 C CNN
+F 3 "" H 1025 -5450 50  0001 C CNN
+	1    1025 -5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-3125 -10100 -3025 -10100
+Wire Wire Line
+	-3125 -9350 -3025 -9350
+Wire Wire Line
+	-3125 -8600 -3025 -8600
+Wire Wire Line
+	-3125 -7800 -3025 -7800
+Wire Wire Line
+	-3125 -7000 -3025 -7000
+Wire Wire Line
+	-3125 -6225 -3025 -6225
+Wire Wire Line
+	-3125 -5450 -3025 -5450
+Wire Wire Line
+	-4300 -9450 -4225 -9450
+Wire Wire Line
+	-4225 -9450 -4225 -10450
+Wire Wire Line
+	-4300 -9350 -4200 -9350
+Wire Wire Line
+	-4200 -9350 -4200 -10425
+Wire Wire Line
+	-4200 -10425 525  -10425
+Wire Wire Line
+	-4300 -9250 -4175 -9250
+Wire Wire Line
+	-4175 -9250 -4175 -10400
+Wire Wire Line
+	-775 -10375 -4150 -10375
+Wire Wire Line
+	-4150 -10375 -4150 -9150
+Wire Wire Line
+	-4150 -9150 -4300 -9150
+Wire Wire Line
+	-4300 -9050 -4125 -9050
+Wire Wire Line
+	-4125 -9050 -4125 -10350
+Wire Wire Line
+	-4125 -10350 -1425 -10350
+Wire Wire Line
+	-2075 -10325 -4100 -10325
+Wire Wire Line
+	-4100 -10325 -4100 -8950
+Wire Wire Line
+	-4100 -8950 -4300 -8950
+Wire Wire Line
+	-4300 -8850 -4075 -8850
+Wire Wire Line
+	-4075 -8850 -4075 -10300
+Wire Wire Line
+	-4075 -10300 -2725 -10300
+Wire Wire Line
+	-3550 -9500 -3550 -8700
+Wire Wire Line
+	-3550 -8700 -4300 -8700
+Wire Wire Line
+	-4300 -8600 -3525 -8600
+Wire Wire Line
+	-3525 -8600 -3525 -8750
+Wire Wire Line
+	-4300 -8500 -3525 -8500
+Wire Wire Line
+	-3525 -8500 -3525 -8000
+Wire Wire Line
+	-4300 -8400 -3550 -8400
+Wire Wire Line
+	-3550 -8400 -3550 -7200
+Wire Wire Line
+	-4300 -8300 -3575 -8300
+Wire Wire Line
+	-3575 -8300 -3575 -6400
+Wire Wire Line
+	-4300 -8200 -3600 -8200
+Wire Wire Line
+	-3600 -8200 -3600 -5625
+Wire Wire Line
+	-4300 -8100 -3625 -8100
+Wire Wire Line
+	-3625 -8100 -3625 -4850
+Wire Wire Line
+	-2475 -10100 -2375 -10100
+Wire Wire Line
+	-2475 -9350 -2375 -9350
+Wire Wire Line
+	-2475 -8600 -2375 -8600
+Wire Wire Line
+	-2475 -7800 -2375 -7800
+Wire Wire Line
+	-2475 -7000 -2375 -7000
+Wire Wire Line
+	-2475 -6225 -2375 -6225
+Wire Wire Line
+	-2475 -5450 -2375 -5450
+Wire Wire Line
+	-1825 -10100 -1725 -10100
+Wire Wire Line
+	-1825 -9350 -1725 -9350
+Wire Wire Line
+	-1825 -8600 -1725 -8600
+Wire Wire Line
+	-1825 -7800 -1725 -7800
+Wire Wire Line
+	-1825 -7000 -1725 -7000
+Wire Wire Line
+	-1825 -6225 -1725 -6225
+Wire Wire Line
+	-1825 -5450 -1725 -5450
+Wire Wire Line
+	-1175 -10100 -1075 -10100
+Wire Wire Line
+	-1175 -9350 -1075 -9350
+Wire Wire Line
+	-1175 -8600 -1075 -8600
+Wire Wire Line
+	-1175 -7800 -1075 -7800
+Wire Wire Line
+	-1175 -7000 -1075 -7000
+Wire Wire Line
+	-1175 -6225 -1075 -6225
+Wire Wire Line
+	-1175 -5450 -1075 -5450
+Wire Wire Line
+	-525 -10100 -425 -10100
+Wire Wire Line
+	-525 -9350 -425 -9350
+Wire Wire Line
+	-525 -8600 -425 -8600
+Wire Wire Line
+	-525 -7800 -425 -7800
+Wire Wire Line
+	-525 -7000 -425 -7000
+Wire Wire Line
+	-525 -6225 -425 -6225
+Wire Wire Line
+	-525 -5450 -425 -5450
+Wire Wire Line
+	125  -10100 225  -10100
+Wire Wire Line
+	125  -9350 225  -9350
+Wire Wire Line
+	125  -8600 225  -8600
+Wire Wire Line
+	125  -7800 225  -7800
+Wire Wire Line
+	125  -7000 225  -7000
+Wire Wire Line
+	125  -6225 225  -6225
+Wire Wire Line
+	125  -5450 225  -5450
+Wire Wire Line
+	775  -10100 875  -10100
+Wire Wire Line
+	775  -9350 875  -9350
+Wire Wire Line
+	775  -8600 875  -8600
+Wire Wire Line
+	775  -7800 875  -7800
+Wire Wire Line
+	775  -7000 875  -7000
+Wire Wire Line
+	775  -6225 875  -6225
+Wire Wire Line
+	775  -5450 875  -5450
+Wire Wire Line
+	-3625 -4850 -3125 -4850
+Wire Wire Line
+	-3125 -4850 -2475 -4850
+Wire Wire Line
+	-2475 -4850 -1825 -4850
+Wire Wire Line
+	-1825 -4850 -1175 -4850
+Wire Wire Line
+	-1175 -4850 -525 -4850
+Wire Wire Line
+	-525 -4850 125  -4850
+Wire Wire Line
+	125  -4850 775  -4850
+Connection ~ -3125 -4850
+Connection ~ -2475 -4850
+Connection ~ -1825 -4850
+Connection ~ -1175 -4850
+Connection ~ -525 -4850
+Connection ~ 125  -4850
+Wire Wire Line
+	-3600 -5625 -3125 -5625
+Wire Wire Line
+	-3125 -5625 -2475 -5625
+Wire Wire Line
+	-2475 -5625 -1825 -5625
+Wire Wire Line
+	-1825 -5625 -1175 -5625
+Wire Wire Line
+	-1175 -5625 -525 -5625
+Wire Wire Line
+	-525 -5625 125  -5625
+Wire Wire Line
+	125  -5625 775  -5625
+Connection ~ 125  -5625
+Connection ~ -525 -5625
+Connection ~ -1175 -5625
+Connection ~ -1825 -5625
+Wire Wire Line
+	-3575 -6400 -3125 -6400
+Wire Wire Line
+	-3125 -6400 -2475 -6400
+Wire Wire Line
+	-2475 -6400 -1825 -6400
+Wire Wire Line
+	-1825 -6400 -1175 -6400
+Wire Wire Line
+	-1175 -6400 -525 -6400
+Wire Wire Line
+	-525 -6400 125  -6400
+Wire Wire Line
+	125  -6400 775  -6400
+Connection ~ -1175 -6400
+Connection ~ -1825 -6400
+Connection ~ -2475 -5625
+Connection ~ -3125 -5625
+Connection ~ -2475 -6400
+Connection ~ -3125 -6400
+Wire Wire Line
+	-3550 -7200 -3125 -7200
+Wire Wire Line
+	-3125 -7200 -2475 -7200
+Wire Wire Line
+	-2475 -7200 -1825 -7200
+Wire Wire Line
+	-1825 -7200 -1175 -7200
+Wire Wire Line
+	-1175 -7200 -525 -7200
+Wire Wire Line
+	-525 -7200 125  -7200
+Wire Wire Line
+	125  -7200 775  -7200
+Connection ~ -3125 -7200
+Connection ~ -2475 -7200
+Wire Wire Line
+	-3525 -8000 -3125 -8000
+Wire Wire Line
+	-3125 -8000 -2475 -8000
+Wire Wire Line
+	-2475 -8000 -1825 -8000
+Wire Wire Line
+	-1825 -8000 -1175 -8000
+Wire Wire Line
+	-1175 -8000 -525 -8000
+Wire Wire Line
+	-525 -8000 125  -8000
+Wire Wire Line
+	125  -8000 775  -8000
+Connection ~ -2475 -8000
+Wire Wire Line
+	-3525 -8750 -3125 -8750
+Wire Wire Line
+	-3125 -8750 -2475 -8750
+Wire Wire Line
+	-2475 -8750 -1825 -8750
+Wire Wire Line
+	-1825 -8750 -1175 -8750
+Wire Wire Line
+	-1175 -8750 -525 -8750
+Wire Wire Line
+	-525 -8750 125  -8750
+Wire Wire Line
+	125  -8750 775  -8750
+Connection ~ -2475 -8750
+Connection ~ -1825 -8750
+Connection ~ -1175 -8750
+Connection ~ -1825 -8000
+Connection ~ -1175 -8000
+Connection ~ -525 -8000
+Connection ~ 125  -8000
+Connection ~ -525 -8750
+Wire Wire Line
+	-3550 -9500 -3125 -9500
+Wire Wire Line
+	-3125 -9500 -2475 -9500
+Wire Wire Line
+	-2475 -9500 -1825 -9500
+Wire Wire Line
+	-1825 -9500 -1175 -9500
+Wire Wire Line
+	-1175 -9500 -525 -9500
+Wire Wire Line
+	-525 -9500 125  -9500
+Wire Wire Line
+	125  -9500 775  -9500
+Connection ~ -525 -9500
+Connection ~ -1175 -9500
+Connection ~ -1825 -7200
+Connection ~ -1175 -7200
+Connection ~ -525 -7200
+Connection ~ 125  -7200
+Connection ~ -525 -6400
+Connection ~ 125  -6400
+Connection ~ 125  -8750
+Connection ~ 125  -9500
+Wire Wire Line
+	-2725 -10300 -2725 -10100
+Wire Wire Line
+	-2725 -10100 -2725 -9350
+Wire Wire Line
+	-2725 -9350 -2725 -8600
+Wire Wire Line
+	-2725 -8600 -2725 -7800
+Wire Wire Line
+	-2725 -7800 -2725 -7000
+Wire Wire Line
+	-2725 -7000 -2725 -6225
+Wire Wire Line
+	-2725 -6225 -2725 -5450
+Connection ~ -2725 -10100
+Connection ~ -2725 -9350
+Connection ~ -2725 -8600
+Connection ~ -2725 -7800
+Connection ~ -2725 -7000
+Connection ~ -2725 -6225
+Wire Wire Line
+	-2075 -10325 -2075 -10100
+Wire Wire Line
+	-2075 -10100 -2075 -9350
+Wire Wire Line
+	-2075 -9350 -2075 -8600
+Wire Wire Line
+	-2075 -8600 -2075 -7800
+Wire Wire Line
+	-2075 -7800 -2075 -7000
+Wire Wire Line
+	-2075 -7000 -2075 -6225
+Wire Wire Line
+	-2075 -6225 -2075 -5450
+Wire Wire Line
+	-1425 -10350 -1425 -10100
+Wire Wire Line
+	-1425 -10100 -1425 -9350
+Wire Wire Line
+	-1425 -9350 -1425 -8600
+Wire Wire Line
+	-1425 -8600 -1425 -7800
+Wire Wire Line
+	-1425 -7800 -1425 -7000
+Wire Wire Line
+	-1425 -7000 -1425 -6225
+Wire Wire Line
+	-1425 -6225 -1425 -5450
+Wire Wire Line
+	-775 -10375 -775 -10100
+Wire Wire Line
+	-775 -10100 -775 -9350
+Wire Wire Line
+	-775 -9350 -775 -8600
+Wire Wire Line
+	-775 -8600 -775 -7800
+Wire Wire Line
+	-775 -7800 -775 -7000
+Wire Wire Line
+	-775 -7000 -775 -6225
+Wire Wire Line
+	-775 -6225 -775 -5450
+Wire Wire Line
+	-125 -10400 -125 -10100
+Wire Wire Line
+	-125 -10100 -125 -9350
+Wire Wire Line
+	-125 -9350 -125 -8600
+Wire Wire Line
+	-125 -8600 -125 -7800
+Wire Wire Line
+	-125 -7800 -125 -7000
+Wire Wire Line
+	-125 -7000 -125 -6225
+Wire Wire Line
+	-125 -6225 -125 -5450
+Wire Wire Line
+	525  -10425 525  -10100
+Wire Wire Line
+	525  -10100 525  -9350
+Wire Wire Line
+	525  -9350 525  -8600
+Wire Wire Line
+	525  -8600 525  -7800
+Wire Wire Line
+	525  -7800 525  -7000
+Wire Wire Line
+	525  -7000 525  -6225
+Wire Wire Line
+	525  -6225 525  -5450
+Connection ~ 525  -6225
+Connection ~ -125 -6225
+Connection ~ -775 -6225
+Connection ~ -1425 -6225
+Connection ~ -2075 -6225
+Connection ~ -2075 -7000
+Connection ~ -1425 -7000
+Connection ~ -775 -7000
+Connection ~ -125 -7000
+Connection ~ 525  -7000
+Wire Wire Line
+	1175 -10450 1175 -10100
+Wire Wire Line
+	1175 -10100 1175 -9350
+Wire Wire Line
+	1175 -9350 1175 -8600
+Wire Wire Line
+	1175 -8600 1175 -7800
+Wire Wire Line
+	1175 -7800 1175 -7000
+Wire Wire Line
+	1175 -7000 1175 -6225
+Wire Wire Line
+	1175 -6225 1175 -5450
+Connection ~ 1175 -7000
+Connection ~ 525  -7800
+Connection ~ 1175 -7800
+Connection ~ -125 -7800
+Connection ~ -775 -7800
+Connection ~ -1425 -7800
+Connection ~ -2075 -7800
+Connection ~ -2075 -8600
+Connection ~ -1425 -8600
+Connection ~ -775 -8600
+Connection ~ -125 -8600
+Connection ~ 525  -8600
+Connection ~ 1175 -8600
+Connection ~ 1175 -9350
+Connection ~ 525  -9350
+Connection ~ -125 -9350
+Connection ~ -775 -9350
+Connection ~ -1425 -9350
+Connection ~ -2075 -9350
+Connection ~ -2075 -10100
+Connection ~ -1425 -10100
+Connection ~ -775 -10100
+Connection ~ -125 -10100
+Connection ~ 525  -10100
+Connection ~ 1175 -10100
+Wire Wire Line
+	-4175 -10400 -125 -10400
+Wire Wire Line
+	-4225 -10450 1175 -10450
+Connection ~ -2475 -9500
+Connection ~ -1825 -9500
+Connection ~ 1175 -6225
+Connection ~ -3125 -9500
+Connection ~ -3125 -8750
+Connection ~ -3125 -8000
+Wire Wire Line
+	6225 900  6225 1100
+Wire Wire Line
+	6225 1100 6225 1850
+Wire Wire Line
+	6225 1850 6225 2600
+Wire Wire Line
+	6225 2600 6225 3400
+Wire Wire Line
+	6225 3400 6225 4200
+Wire Wire Line
+	6225 4200 6225 4975
 $EndSCHEMATC
