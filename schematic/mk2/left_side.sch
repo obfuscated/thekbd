@@ -1,35 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:mylib_experimental
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-EELAYER 25 0
+EESchema Schematic File Version 4
+LIBS:mk2-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Arduino_Micro_Socket ARD?
+L mylib_experimental:Arduino_Micro_Socket ARD?
 U 1 1 5A153725
 P 2800 1775
 F 0 "ARD?" V 2900 1775 60  0000 C CNN
@@ -59,7 +30,7 @@ NoConn ~ 1500 2075
 NoConn ~ 1500 875 
 NoConn ~ 1500 975 
 $Comp
-L 74HC4050 U?
+L mylib_experimental:74HC4050 U?
 U 1 1 5A20B7AC
 P 2775 5525
 F 0 "U?" H 2775 5025 60  0000 C CNN
@@ -70,7 +41,7 @@ F 3 "" H 2775 5225 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TFT128x64 U?
+L mylib_experimental:TFT128x64 U?
 U 1 1 5A20C231
 P 3025 3950
 AR Path="/5A20C231" Ref="U?"  Part="1" 
@@ -85,7 +56,7 @@ $EndComp
 NoConn ~ 3325 5275
 NoConn ~ 3325 5375
 $Comp
-L C C?
+L mylib_experimental:C C?
 U 1 1 5A21B12B
 P 1400 5500
 F 0 "C?" H 1425 5600 50  0000 L CNN
@@ -99,7 +70,7 @@ NoConn ~ 4100 2475
 NoConn ~ 4100 2575
 NoConn ~ 4100 2675
 $Comp
-L CONN_01X07 J?
+L mylib_experimental:CONN_01X07 J?
 U 1 1 5A22DA35
 P 2775 7000
 F 0 "J?" H 2775 7400 50  0000 C CNN
@@ -119,7 +90,7 @@ Text HLabel 1000 1375 0    60   BiDi ~ 0
 Text HLabel 1000 1475 0    60   BiDi ~ 0
 GND
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14819F
 P 6475 1325
 F 0 "SW?" H 6625 1435 50  0000 C CNN
@@ -130,7 +101,7 @@ F 3 "" H 6475 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481A6
 P 6725 1025
 F 0 "D?" H 6725 1125 50  0000 C CNN
@@ -141,7 +112,7 @@ F 3 "" H 6725 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1481AD
 P 6475 2075
 F 0 "SW?" H 6625 2185 50  0000 C CNN
@@ -152,7 +123,7 @@ F 3 "" H 6475 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481B4
 P 6725 1775
 F 0 "D?" H 6725 1875 50  0000 C CNN
@@ -163,7 +134,7 @@ F 3 "" H 6725 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1481BB
 P 6475 2825
 F 0 "SW?" H 6625 2935 50  0000 C CNN
@@ -174,7 +145,7 @@ F 3 "" H 6475 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481C2
 P 6725 2525
 F 0 "D?" H 6725 2625 50  0000 C CNN
@@ -185,7 +156,7 @@ F 3 "" H 6725 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1481C9
 P 6475 3625
 F 0 "SW?" H 6625 3735 50  0000 C CNN
@@ -196,7 +167,7 @@ F 3 "" H 6475 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481D0
 P 6725 3325
 F 0 "D?" H 6725 3425 50  0000 C CNN
@@ -207,7 +178,7 @@ F 3 "" H 6725 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1481D7
 P 6475 4425
 F 0 "SW?" H 6625 4535 50  0000 C CNN
@@ -218,7 +189,7 @@ F 3 "" H 6475 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481DE
 P 6725 4125
 F 0 "D?" H 6725 4225 50  0000 C CNN
@@ -229,7 +200,7 @@ F 3 "" H 6725 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1481E5
 P 6475 5200
 F 0 "SW?" H 6625 5310 50  0000 C CNN
@@ -240,7 +211,7 @@ F 3 "" H 6475 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1481EC
 P 6725 4900
 F 0 "D?" H 6725 5000 50  0000 C CNN
@@ -251,7 +222,7 @@ F 3 "" H 6725 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148201
 P 7125 1325
 F 0 "SW?" H 7275 1435 50  0000 C CNN
@@ -262,7 +233,7 @@ F 3 "" H 7125 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148208
 P 7375 1025
 F 0 "D?" H 7375 1125 50  0000 C CNN
@@ -273,7 +244,7 @@ F 3 "" H 7375 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14820F
 P 7125 2075
 F 0 "SW?" H 7275 2185 50  0000 C CNN
@@ -284,7 +255,7 @@ F 3 "" H 7125 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148216
 P 7375 1775
 F 0 "D?" H 7375 1875 50  0000 C CNN
@@ -295,7 +266,7 @@ F 3 "" H 7375 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14821D
 P 7125 2825
 F 0 "SW?" H 7275 2935 50  0000 C CNN
@@ -306,7 +277,7 @@ F 3 "" H 7125 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148224
 P 7375 2525
 F 0 "D?" H 7375 2625 50  0000 C CNN
@@ -317,7 +288,7 @@ F 3 "" H 7375 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14822B
 P 7125 3625
 F 0 "SW?" H 7275 3735 50  0000 C CNN
@@ -328,7 +299,7 @@ F 3 "" H 7125 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148232
 P 7375 3325
 F 0 "D?" H 7375 3425 50  0000 C CNN
@@ -339,7 +310,7 @@ F 3 "" H 7375 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148239
 P 7125 4425
 F 0 "SW?" H 7275 4535 50  0000 C CNN
@@ -350,7 +321,7 @@ F 3 "" H 7125 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148240
 P 7375 4125
 F 0 "D?" H 7375 4225 50  0000 C CNN
@@ -361,7 +332,7 @@ F 3 "" H 7375 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148247
 P 7125 5200
 F 0 "SW?" H 7275 5310 50  0000 C CNN
@@ -372,7 +343,7 @@ F 3 "" H 7125 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14824E
 P 7375 4900
 F 0 "D?" H 7375 5000 50  0000 C CNN
@@ -383,7 +354,7 @@ F 3 "" H 7375 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148263
 P 7775 1325
 F 0 "SW?" H 7925 1435 50  0000 C CNN
@@ -394,7 +365,7 @@ F 3 "" H 7775 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14826A
 P 8025 1025
 F 0 "D?" H 8025 1125 50  0000 C CNN
@@ -405,7 +376,7 @@ F 3 "" H 8025 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148271
 P 7775 2075
 F 0 "SW?" H 7925 2185 50  0000 C CNN
@@ -416,7 +387,7 @@ F 3 "" H 7775 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148278
 P 8025 1775
 F 0 "D?" H 8025 1875 50  0000 C CNN
@@ -427,7 +398,7 @@ F 3 "" H 8025 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14827F
 P 7775 2825
 F 0 "SW?" H 7925 2935 50  0000 C CNN
@@ -438,7 +409,7 @@ F 3 "" H 7775 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148286
 P 8025 2525
 F 0 "D?" H 8025 2625 50  0000 C CNN
@@ -449,7 +420,7 @@ F 3 "" H 8025 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14828D
 P 7775 3625
 F 0 "SW?" H 7925 3735 50  0000 C CNN
@@ -460,7 +431,7 @@ F 3 "" H 7775 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148294
 P 8025 3325
 F 0 "D?" H 8025 3425 50  0000 C CNN
@@ -471,7 +442,7 @@ F 3 "" H 8025 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14829B
 P 7775 4425
 F 0 "SW?" H 7925 4535 50  0000 C CNN
@@ -482,7 +453,7 @@ F 3 "" H 7775 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482A2
 P 8025 4125
 F 0 "D?" H 8025 4225 50  0000 C CNN
@@ -493,7 +464,7 @@ F 3 "" H 8025 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482A9
 P 7775 5200
 F 0 "SW?" H 7925 5310 50  0000 C CNN
@@ -504,7 +475,7 @@ F 3 "" H 7775 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482B0
 P 8025 4900
 F 0 "D?" H 8025 5000 50  0000 C CNN
@@ -515,7 +486,7 @@ F 3 "" H 8025 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482C5
 P 8425 1325
 F 0 "SW?" H 8575 1435 50  0000 C CNN
@@ -526,7 +497,7 @@ F 3 "" H 8425 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482CC
 P 8675 1025
 F 0 "D?" H 8675 1125 50  0000 C CNN
@@ -537,7 +508,7 @@ F 3 "" H 8675 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482D3
 P 8425 2075
 F 0 "SW?" H 8575 2185 50  0000 C CNN
@@ -548,7 +519,7 @@ F 3 "" H 8425 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482DA
 P 8675 1775
 F 0 "D?" H 8675 1875 50  0000 C CNN
@@ -559,7 +530,7 @@ F 3 "" H 8675 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482E1
 P 8425 2825
 F 0 "SW?" H 8575 2935 50  0000 C CNN
@@ -570,7 +541,7 @@ F 3 "" H 8425 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482E8
 P 8675 2525
 F 0 "D?" H 8675 2625 50  0000 C CNN
@@ -581,7 +552,7 @@ F 3 "" H 8675 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482EF
 P 8425 3625
 F 0 "SW?" H 8575 3735 50  0000 C CNN
@@ -592,7 +563,7 @@ F 3 "" H 8425 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1482F6
 P 8675 3325
 F 0 "D?" H 8675 3425 50  0000 C CNN
@@ -603,7 +574,7 @@ F 3 "" H 8675 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1482FD
 P 8425 4425
 F 0 "SW?" H 8575 4535 50  0000 C CNN
@@ -614,7 +585,7 @@ F 3 "" H 8425 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148304
 P 8675 4125
 F 0 "D?" H 8675 4225 50  0000 C CNN
@@ -625,7 +596,7 @@ F 3 "" H 8675 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14830B
 P 8425 5200
 F 0 "SW?" H 8575 5310 50  0000 C CNN
@@ -636,7 +607,7 @@ F 3 "" H 8425 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148312
 P 8675 4900
 F 0 "D?" H 8675 5000 50  0000 C CNN
@@ -647,7 +618,7 @@ F 3 "" H 8675 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148327
 P 9075 1325
 F 0 "SW?" H 9225 1435 50  0000 C CNN
@@ -658,7 +629,7 @@ F 3 "" H 9075 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14832E
 P 9325 1025
 F 0 "D?" H 9325 1125 50  0000 C CNN
@@ -669,7 +640,7 @@ F 3 "" H 9325 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148335
 P 9075 2075
 F 0 "SW?" H 9225 2185 50  0000 C CNN
@@ -680,7 +651,7 @@ F 3 "" H 9075 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14833C
 P 9325 1775
 F 0 "D?" H 9325 1875 50  0000 C CNN
@@ -691,7 +662,7 @@ F 3 "" H 9325 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148343
 P 9075 2825
 F 0 "SW?" H 9225 2935 50  0000 C CNN
@@ -702,7 +673,7 @@ F 3 "" H 9075 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14834A
 P 9325 2525
 F 0 "D?" H 9325 2625 50  0000 C CNN
@@ -713,7 +684,7 @@ F 3 "" H 9325 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148351
 P 9075 3625
 F 0 "SW?" H 9225 3735 50  0000 C CNN
@@ -724,7 +695,7 @@ F 3 "" H 9075 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148358
 P 9325 3325
 F 0 "D?" H 9325 3425 50  0000 C CNN
@@ -735,7 +706,7 @@ F 3 "" H 9325 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14835F
 P 9075 4425
 F 0 "SW?" H 9225 4535 50  0000 C CNN
@@ -746,7 +717,7 @@ F 3 "" H 9075 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148366
 P 9325 4125
 F 0 "D?" H 9325 4225 50  0000 C CNN
@@ -757,7 +728,7 @@ F 3 "" H 9325 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B14836D
 P 9075 5200
 F 0 "SW?" H 9225 5310 50  0000 C CNN
@@ -768,7 +739,7 @@ F 3 "" H 9075 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148374
 P 9325 4900
 F 0 "D?" H 9325 5000 50  0000 C CNN
@@ -779,7 +750,7 @@ F 3 "" H 9325 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148389
 P 9725 1325
 F 0 "SW?" H 9875 1435 50  0000 C CNN
@@ -790,7 +761,7 @@ F 3 "" H 9725 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148390
 P 9975 1025
 F 0 "D?" H 9975 1125 50  0000 C CNN
@@ -801,7 +772,7 @@ F 3 "" H 9975 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148397
 P 9725 2075
 F 0 "SW?" H 9875 2185 50  0000 C CNN
@@ -812,7 +783,7 @@ F 3 "" H 9725 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14839E
 P 9975 1775
 F 0 "D?" H 9975 1875 50  0000 C CNN
@@ -823,7 +794,7 @@ F 3 "" H 9975 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483A5
 P 9725 2825
 F 0 "SW?" H 9875 2935 50  0000 C CNN
@@ -834,7 +805,7 @@ F 3 "" H 9725 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1483AC
 P 9975 2525
 F 0 "D?" H 9975 2625 50  0000 C CNN
@@ -845,7 +816,7 @@ F 3 "" H 9975 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483B3
 P 9725 3625
 F 0 "SW?" H 9875 3735 50  0000 C CNN
@@ -856,7 +827,7 @@ F 3 "" H 9725 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1483BA
 P 9975 3325
 F 0 "D?" H 9975 3425 50  0000 C CNN
@@ -867,7 +838,7 @@ F 3 "" H 9975 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483C1
 P 9725 4425
 F 0 "SW?" H 9875 4535 50  0000 C CNN
@@ -878,7 +849,7 @@ F 3 "" H 9725 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1483C8
 P 9975 4125
 F 0 "D?" H 9975 4225 50  0000 C CNN
@@ -889,7 +860,7 @@ F 3 "" H 9975 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483CF
 P 9725 5200
 F 0 "SW?" H 9875 5310 50  0000 C CNN
@@ -900,7 +871,7 @@ F 3 "" H 9725 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1483D6
 P 9975 4900
 F 0 "D?" H 9975 5000 50  0000 C CNN
@@ -911,7 +882,7 @@ F 3 "" H 9975 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483EB
 P 10375 1325
 F 0 "SW?" H 10525 1435 50  0000 C CNN
@@ -922,7 +893,7 @@ F 3 "" H 10375 1325 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B1483F2
 P 10625 1025
 F 0 "D?" H 10625 1125 50  0000 C CNN
@@ -933,7 +904,7 @@ F 3 "" H 10625 1025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1483F9
 P 10375 2075
 F 0 "SW?" H 10525 2185 50  0000 C CNN
@@ -944,7 +915,7 @@ F 3 "" H 10375 2075 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148400
 P 10625 1775
 F 0 "D?" H 10625 1875 50  0000 C CNN
@@ -955,7 +926,7 @@ F 3 "" H 10625 1775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148407
 P 10375 2825
 F 0 "SW?" H 10525 2935 50  0000 C CNN
@@ -966,7 +937,7 @@ F 3 "" H 10375 2825 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14840E
 P 10625 2525
 F 0 "D?" H 10625 2625 50  0000 C CNN
@@ -977,7 +948,7 @@ F 3 "" H 10625 2525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148415
 P 10375 3625
 F 0 "SW?" H 10525 3735 50  0000 C CNN
@@ -988,7 +959,7 @@ F 3 "" H 10375 3625 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14841C
 P 10625 3325
 F 0 "D?" H 10625 3425 50  0000 C CNN
@@ -999,7 +970,7 @@ F 3 "" H 10625 3325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148423
 P 10375 4425
 F 0 "SW?" H 10525 4535 50  0000 C CNN
@@ -1010,7 +981,7 @@ F 3 "" H 10375 4425 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B14842A
 P 10625 4125
 F 0 "D?" H 10625 4225 50  0000 C CNN
@@ -1021,7 +992,7 @@ F 3 "" H 10625 4125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L mylib_experimental:SW_PUSH SW?
 U 1 1 5B148431
 P 10375 5200
 F 0 "SW?" H 10525 5310 50  0000 C CNN
@@ -1032,7 +1003,7 @@ F 3 "" H 10375 5200 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L mylib_experimental:D D?
 U 1 1 5B148438
 P 10625 4900
 F 0 "D?" H 10625 5000 50  0000 C CNN
@@ -1043,7 +1014,7 @@ F 3 "" H 10625 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X07 J?
+L mylib_experimental:CONN_01X07 J?
 U 1 1 5B1654E1
 P 2000 3400
 F 0 "J?" H 2000 3800 50  0000 C CNN
@@ -1054,7 +1025,7 @@ F 3 "" H 2000 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONN_01X07 J?
+L mylib_experimental:CONN_01X07 J?
 U 1 1 5B16A050
 P 4550 1375
 F 0 "J?" H 4550 1775 50  0000 C CNN
@@ -1065,7 +1036,7 @@ F 3 "" H 4550 1375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X07 J?
+L mylib_experimental:CONN_01X07 J?
 U 1 1 5B16A24A
 P 5175 975
 F 0 "J?" H 5175 1375 50  0000 C CNN
@@ -1076,7 +1047,7 @@ F 3 "" H 5175 975 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1000 2275 1500 2275
+	1000 2275 1400 2275
 Wire Wire Line
 	1000 1375 1100 1375
 Wire Wire Line
@@ -1094,9 +1065,9 @@ Wire Wire Line
 Wire Wire Line
 	1750 2925 1800 2925
 Wire Wire Line
-	1400 5175 2225 5175
+	1400 5175 1575 5175
 Wire Wire Line
-	1400 5875 2225 5875
+	1400 5875 2125 5875
 Wire Wire Line
 	3275 4900 2075 4900
 Wire Wire Line
@@ -1161,9 +1132,8 @@ Wire Wire Line
 	4250 975  4250 2925
 Wire Wire Line
 	1400 5350 1400 5175
-Connection ~ 1400 5175
 Wire Wire Line
-	1400 5650 1400 6800
+	1400 5650 1400 5875
 Connection ~ 1400 5875
 Wire Wire Line
 	4100 875  4275 875 
@@ -1341,13 +1311,13 @@ Wire Wire Line
 Wire Wire Line
 	10375 4900 10475 4900
 Wire Wire Line
-	6000 5500 10375 5500
+	6000 5500 6475 5500
 Connection ~ 9725 5500
 Connection ~ 9075 5500
 Connection ~ 8425 5500
 Connection ~ 7775 5500
 Wire Wire Line
-	6025 4725 10375 4725
+	6025 4725 6475 4725
 Connection ~ 8425 4725
 Connection ~ 7775 4725
 Connection ~ 7125 5500
@@ -1355,14 +1325,14 @@ Connection ~ 6475 5500
 Connection ~ 7125 4725
 Connection ~ 6475 4725
 Wire Wire Line
-	6050 3925 10375 3925
+	6050 3925 6475 3925
 Connection ~ 6475 3925
 Connection ~ 7125 3925
 Wire Wire Line
-	6075 3125 10375 3125
+	6075 3125 6475 3125
 Connection ~ 7125 3125
 Wire Wire Line
-	6075 2375 10375 2375
+	6075 2375 6475 2375
 Connection ~ 7125 2375
 Connection ~ 7775 2375
 Connection ~ 8425 2375
@@ -1372,7 +1342,7 @@ Connection ~ 9075 3125
 Connection ~ 9725 3125
 Connection ~ 9075 2375
 Wire Wire Line
-	6050 1625 10375 1625
+	6050 1625 6475 1625
 Connection ~ 9075 1625
 Connection ~ 8425 1625
 Connection ~ 7775 3925
@@ -1388,29 +1358,23 @@ Connection ~ 6875 1775
 Connection ~ 6875 2525
 Connection ~ 6875 3325
 Connection ~ 6875 4125
-Connection ~ 6875 4900
 Wire Wire Line
-	7525 800  7525 4900
+	7525 800  7525 1025
 Wire Wire Line
-	8175 775  8175 4900
+	8175 775  8175 1025
 Wire Wire Line
-	8825 750  8825 4900
+	8825 750  8825 1025
 Wire Wire Line
-	9475 725  9475 4900
+	9475 725  9475 1025
 Wire Wire Line
-	10125 700  10125 4900
-Connection ~ 10125 4900
-Connection ~ 9475 4900
-Connection ~ 8825 4900
-Connection ~ 8175 4900
-Connection ~ 7525 4900
+	10125 700  10125 1025
 Connection ~ 7525 4125
 Connection ~ 8175 4125
 Connection ~ 8825 4125
 Connection ~ 9475 4125
 Connection ~ 10125 4125
 Wire Wire Line
-	10775 675  10775 4900
+	10775 675  10775 1025
 Connection ~ 10775 4125
 Connection ~ 10125 3325
 Connection ~ 10775 3325
@@ -1442,7 +1406,6 @@ Wire Wire Line
 	5375 675  10775 675 
 Connection ~ 7125 1625
 Connection ~ 7775 1625
-Connection ~ 10775 4900
 Connection ~ 6475 1625
 Connection ~ 6475 2375
 Connection ~ 6475 3125
@@ -1513,7 +1476,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 1275 5500 825 
 $Comp
-L Conn_01x06 J?
+L mylib_experimental:Conn_01x06 J?
 U 1 1 5B11C0D9
 P 5550 2725
 F 0 "J?" H 5550 3025 50  0000 C CNN
@@ -1524,7 +1487,7 @@ F 3 "" H 5550 2725 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Conn_01x06 J?
+L mylib_experimental:Conn_01x06 J?
 U 1 1 5B11C290
 P 1225 3400
 F 0 "J?" H 1225 3700 50  0000 C CNN
@@ -1590,6 +1553,158 @@ Wire Wire Line
 Wire Wire Line
 	925  2875 925  3200
 Wire Wire Line
-	6875 825  6875 4900
+	6875 825  6875 1025
 NoConn ~ 1500 2675
+Wire Wire Line
+	2075 5175 2225 5175
+Wire Wire Line
+	2125 5875 2225 5875
+Wire Wire Line
+	1400 5875 1400 6800
+Wire Wire Line
+	1575 5175 2075 5175
+Wire Wire Line
+	9725 5500 10375 5500
+Wire Wire Line
+	9075 5500 9725 5500
+Wire Wire Line
+	8425 5500 9075 5500
+Wire Wire Line
+	7775 5500 8425 5500
+Wire Wire Line
+	8425 4725 9075 4725
+Wire Wire Line
+	7775 4725 8425 4725
+Wire Wire Line
+	7125 5500 7775 5500
+Wire Wire Line
+	6475 5500 7125 5500
+Wire Wire Line
+	7125 4725 7775 4725
+Wire Wire Line
+	6475 4725 7125 4725
+Wire Wire Line
+	6475 3925 7125 3925
+Wire Wire Line
+	7125 3925 7775 3925
+Wire Wire Line
+	7125 3125 7775 3125
+Wire Wire Line
+	7125 2375 7775 2375
+Wire Wire Line
+	7775 2375 8425 2375
+Wire Wire Line
+	8425 2375 9075 2375
+Wire Wire Line
+	7775 3125 8425 3125
+Wire Wire Line
+	8425 3125 9075 3125
+Wire Wire Line
+	9075 3125 9725 3125
+Wire Wire Line
+	9725 3125 10375 3125
+Wire Wire Line
+	9075 2375 9725 2375
+Wire Wire Line
+	9075 1625 9725 1625
+Wire Wire Line
+	8425 1625 9075 1625
+Wire Wire Line
+	7775 3925 8425 3925
+Wire Wire Line
+	8425 3925 9075 3925
+Wire Wire Line
+	9075 3925 9725 3925
+Wire Wire Line
+	9725 3925 10375 3925
+Wire Wire Line
+	9075 4725 9725 4725
+Wire Wire Line
+	9725 4725 10375 4725
+Wire Wire Line
+	9725 2375 10375 2375
+Wire Wire Line
+	9725 1625 10375 1625
+Wire Wire Line
+	6875 1025 6875 1775
+Wire Wire Line
+	6875 1775 6875 2525
+Wire Wire Line
+	6875 2525 6875 3325
+Wire Wire Line
+	6875 3325 6875 4125
+Wire Wire Line
+	6875 4125 6875 4900
+Wire Wire Line
+	7525 4125 7525 4900
+Wire Wire Line
+	8175 4125 8175 4900
+Wire Wire Line
+	8825 4125 8825 4900
+Wire Wire Line
+	9475 4125 9475 4900
+Wire Wire Line
+	10125 4125 10125 4900
+Wire Wire Line
+	10775 4125 10775 4900
+Wire Wire Line
+	10125 3325 10125 4125
+Wire Wire Line
+	10775 3325 10775 4125
+Wire Wire Line
+	9475 3325 9475 4125
+Wire Wire Line
+	8825 3325 8825 4125
+Wire Wire Line
+	8175 3325 8175 4125
+Wire Wire Line
+	7525 3325 7525 4125
+Wire Wire Line
+	7525 2525 7525 3325
+Wire Wire Line
+	8175 2525 8175 3325
+Wire Wire Line
+	8825 2525 8825 3325
+Wire Wire Line
+	9475 2525 9475 3325
+Wire Wire Line
+	10125 2525 10125 3325
+Wire Wire Line
+	10775 2525 10775 3325
+Wire Wire Line
+	10775 1775 10775 2525
+Wire Wire Line
+	10125 1775 10125 2525
+Wire Wire Line
+	9475 1775 9475 2525
+Wire Wire Line
+	8825 1775 8825 2525
+Wire Wire Line
+	8175 1775 8175 2525
+Wire Wire Line
+	7525 1775 7525 2525
+Wire Wire Line
+	7525 1025 7525 1775
+Wire Wire Line
+	8175 1025 8175 1775
+Wire Wire Line
+	8825 1025 8825 1775
+Wire Wire Line
+	9475 1025 9475 1775
+Wire Wire Line
+	10125 1025 10125 1775
+Wire Wire Line
+	10775 1025 10775 1775
+Wire Wire Line
+	7125 1625 7775 1625
+Wire Wire Line
+	7775 1625 8425 1625
+Wire Wire Line
+	6475 1625 7125 1625
+Wire Wire Line
+	6475 2375 7125 2375
+Wire Wire Line
+	6475 3125 7125 3125
+Wire Wire Line
+	1400 2275 1500 2275
 $EndSCHEMATC

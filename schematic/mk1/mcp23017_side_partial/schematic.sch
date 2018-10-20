@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:MCP23017
+EESchema Schematic File Version 4
 LIBS:schematic-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCP23017-RESCUE-schematic U?
+L schematic-rescue:MCP23017-RESCUE-schematic U?
 U 1 1 58742300
 P 5150 2800
 F 0 "U?" H 4600 3900 50  0000 C CNN
@@ -56,7 +26,7 @@ F 3 "DOCUMENTATION" H 5150 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X04 P?
+L schematic-rescue:CONN_01X04 P?
 U 1 1 58742347
 P 2050 2500
 F 0 "P?" H 2050 2750 50  0000 C CNN
@@ -75,7 +45,7 @@ SCL
 Text GLabel 2250 2650 2    60   Input ~ 0
 SDA
 $Comp
-L R R1
+L schematic-rescue:R R1
 U 1 1 587428B5
 P 3400 2950
 F 0 "R1" V 3480 2950 50  0000 C CNN
@@ -86,7 +56,7 @@ F 3 "" H 3400 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L schematic-rescue:R R2
 U 1 1 5874298B
 P 3600 2950
 F 0 "R2" V 3680 2950 50  0000 C CNN
@@ -97,7 +67,7 @@ F 3 "" H 3600 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58744612
 P 8150 1600
 F 0 "D?" H 8150 1700 50  0000 C CNN
@@ -108,7 +78,7 @@ F 3 "" H 8150 1600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 5874466B
 P 8600 1600
 F 0 "D?" H 8600 1700 50  0000 C CNN
@@ -119,7 +89,7 @@ F 3 "" H 8600 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 587446D4
 P 9050 1600
 F 0 "D?" H 9050 1700 50  0000 C CNN
@@ -130,7 +100,7 @@ F 3 "" H 9050 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58744747
 P 9500 1600
 F 0 "D?" H 9500 1700 50  0000 C CNN
@@ -141,7 +111,7 @@ F 3 "" H 9500 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 587447B4
 P 9900 1600
 F 0 "D?" H 9900 1700 50  0000 C CNN
@@ -152,7 +122,7 @@ F 3 "" H 9900 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 587449F9
 P 8000 1900
 F 0 "SW?" H 8150 2010 50  0000 C CNN
@@ -163,7 +133,7 @@ F 3 "" H 8000 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58744D5B
 P 8450 1900
 F 0 "SW?" H 8600 2010 50  0000 C CNN
@@ -174,7 +144,7 @@ F 3 "" H 8450 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58744DC5
 P 8900 1900
 F 0 "SW?" H 9050 2010 50  0000 C CNN
@@ -185,7 +155,7 @@ F 3 "" H 8900 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58744E16
 P 9350 1900
 F 0 "SW?" H 9500 2010 50  0000 C CNN
@@ -196,7 +166,7 @@ F 3 "" H 9350 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58744E9C
 P 9750 1900
 F 0 "SW?" H 9900 2010 50  0000 C CNN
@@ -207,7 +177,7 @@ F 3 "" H 9750 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58746626
 P 8150 2500
 F 0 "D?" H 8150 2600 50  0000 C CNN
@@ -218,7 +188,7 @@ F 3 "" H 8150 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 5874662C
 P 8000 2800
 F 0 "SW?" H 8150 2910 50  0000 C CNN
@@ -229,7 +199,7 @@ F 3 "" H 8000 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58746872
 P 8600 2500
 F 0 "D?" H 8600 2600 50  0000 C CNN
@@ -240,7 +210,7 @@ F 3 "" H 8600 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58746878
 P 8450 2800
 F 0 "SW?" H 8600 2910 50  0000 C CNN
@@ -251,7 +221,7 @@ F 3 "" H 8450 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58746938
 P 8900 2800
 F 0 "SW?" H 9050 2910 50  0000 C CNN
@@ -262,7 +232,7 @@ F 3 "" H 8900 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58746A19
 P 9050 2500
 F 0 "D?" H 9050 2600 50  0000 C CNN
@@ -273,7 +243,7 @@ F 3 "" H 9050 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58746A1F
 P 9500 2500
 F 0 "D?" H 9500 2600 50  0000 C CNN
@@ -284,7 +254,7 @@ F 3 "" H 9500 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58746A25
 P 9350 2800
 F 0 "SW?" H 9500 2910 50  0000 C CNN
@@ -295,7 +265,7 @@ F 3 "" H 9350 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58746AC7
 P 9900 2500
 F 0 "D?" H 9900 2600 50  0000 C CNN
@@ -306,7 +276,7 @@ F 3 "" H 9900 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58746ACD
 P 9750 2800
 F 0 "SW?" H 9900 2910 50  0000 C CNN
@@ -317,7 +287,7 @@ F 3 "" H 9750 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58748190
 P 7700 1600
 F 0 "D?" H 7700 1700 50  0000 C CNN
@@ -328,7 +298,7 @@ F 3 "" H 7700 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58748196
 P 7550 1900
 F 0 "SW?" H 7700 2010 50  0000 C CNN
@@ -339,7 +309,7 @@ F 3 "" H 7550 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58748280
 P 7250 1600
 F 0 "D?" H 7250 1700 50  0000 C CNN
@@ -350,7 +320,7 @@ F 3 "" H 7250 1600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58748286
 P 7100 1900
 F 0 "SW?" H 7250 2010 50  0000 C CNN
@@ -361,7 +331,7 @@ F 3 "" H 7100 1900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 5874B312
 P 7700 2500
 F 0 "D?" H 7700 2600 50  0000 C CNN
@@ -372,7 +342,7 @@ F 3 "" H 7700 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 5874B318
 P 7550 2800
 F 0 "SW?" H 7700 2910 50  0000 C CNN
@@ -383,7 +353,7 @@ F 3 "" H 7550 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 5874B42B
 P 7250 2500
 F 0 "D?" H 7250 2600 50  0000 C CNN
@@ -394,7 +364,7 @@ F 3 "" H 7250 2500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 5874B431
 P 7100 2800
 F 0 "SW?" H 7250 2910 50  0000 C CNN
@@ -405,7 +375,7 @@ F 3 "" H 7100 2800 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751DB7
 P 8150 3350
 F 0 "D?" H 8150 3450 50  0000 C CNN
@@ -416,7 +386,7 @@ F 3 "" H 8150 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751DBD
 P 8000 3650
 F 0 "SW?" H 8150 3760 50  0000 C CNN
@@ -427,7 +397,7 @@ F 3 "" H 8000 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751DC3
 P 8600 3350
 F 0 "D?" H 8600 3450 50  0000 C CNN
@@ -438,7 +408,7 @@ F 3 "" H 8600 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751DC9
 P 8450 3650
 F 0 "SW?" H 8600 3760 50  0000 C CNN
@@ -449,7 +419,7 @@ F 3 "" H 8450 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751DD5
 P 8900 3650
 F 0 "SW?" H 9050 3760 50  0000 C CNN
@@ -460,7 +430,7 @@ F 3 "" H 8900 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751DDB
 P 9050 3350
 F 0 "D?" H 9050 3450 50  0000 C CNN
@@ -471,7 +441,7 @@ F 3 "" H 9050 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751DE1
 P 9500 3350
 F 0 "D?" H 9500 3450 50  0000 C CNN
@@ -482,7 +452,7 @@ F 3 "" H 9500 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751DE7
 P 9350 3650
 F 0 "SW?" H 9500 3760 50  0000 C CNN
@@ -493,7 +463,7 @@ F 3 "" H 9350 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751DED
 P 9900 3350
 F 0 "D?" H 9900 3450 50  0000 C CNN
@@ -504,7 +474,7 @@ F 3 "" H 9900 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751DF3
 P 9750 3650
 F 0 "SW?" H 9900 3760 50  0000 C CNN
@@ -515,7 +485,7 @@ F 3 "" H 9750 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751E06
 P 7700 3350
 F 0 "D?" H 7700 3450 50  0000 C CNN
@@ -526,7 +496,7 @@ F 3 "" H 7700 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751E0C
 P 7550 3650
 F 0 "SW?" H 7700 3760 50  0000 C CNN
@@ -537,7 +507,7 @@ F 3 "" H 7550 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L D D?
+L schematic-rescue:D D?
 U 1 1 58751E12
 P 7250 3350
 F 0 "D?" H 7250 3450 50  0000 C CNN
@@ -548,7 +518,7 @@ F 3 "" H 7250 3350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L SW_PUSH SW?
+L schematic-rescue:SW_PUSH SW?
 U 1 1 58751E18
 P 7100 3650
 F 0 "SW?" H 7250 3760 50  0000 C CNN
@@ -559,22 +529,22 @@ F 3 "" H 7100 3650 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2700 3400 4200 3400
+	2700 3400 3600 3400
 Wire Wire Line
-	3850 2350 3850 4150
+	3850 2350 3850 2600
 Wire Wire Line
 	3850 4150 5150 4150
 Connection ~ 3850 2600
 Wire Wire Line
-	4000 2450 2250 2450
+	4000 2450 3600 2450
 Wire Wire Line
-	4000 1450 4000 2450
+	4000 1450 4000 1900
 Wire Wire Line
 	4000 1450 5150 1450
 Wire Wire Line
 	2700 2550 2700 3400
 Wire Wire Line
-	3100 3300 4200 3300
+	3100 3300 3400 3300
 Wire Wire Line
 	3100 2650 3100 3300
 Wire Wire Line
@@ -608,9 +578,9 @@ Connection ~ 10050 1600
 Wire Wire Line
 	6200 750  10050 750 
 Wire Wire Line
-	10050 750  10050 4700
+	10050 750  10050 1600
 Wire Wire Line
-	9650 800  9650 4700
+	9650 800  9650 1600
 Wire Wire Line
 	6250 800  9650 800 
 Wire Wire Line
@@ -618,9 +588,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 850  9200 850 
 Wire Wire Line
-	9200 850  9200 4700
+	9200 850  9200 1600
 Wire Wire Line
-	8750 900  8750 4700
+	8750 900  8750 1600
 Wire Wire Line
 	6350 900  8750 900 
 Wire Wire Line
@@ -630,11 +600,11 @@ Wire Wire Line
 Wire Wire Line
 	6400 950  8300 950 
 Wire Wire Line
-	8300 950  8300 4700
+	8300 950  8300 1600
 Wire Wire Line
-	6550 3100 9750 3100
+	6550 3100 7100 3100
 Wire Wire Line
-	6550 2200 9750 2200
+	6550 2200 7100 2200
 Connection ~ 8000 2200
 Connection ~ 8450 2200
 Connection ~ 8900 2200
@@ -682,13 +652,13 @@ Wire Wire Line
 Wire Wire Line
 	6450 1000 7850 1000
 Wire Wire Line
-	7850 1000 7850 4700
+	7850 1000 7850 1600
 Wire Wire Line
 	6500 2600 6500 1050
 Wire Wire Line
 	6500 1050 7400 1050
 Wire Wire Line
-	7400 1050 7400 4700
+	7400 1050 7400 1600
 Connection ~ 7100 2200
 Connection ~ 7850 1600
 Connection ~ 7400 1600
@@ -709,17 +679,12 @@ Connection ~ 8450 3950
 Connection ~ 8900 3950
 Connection ~ 9350 3950
 Connection ~ 7550 3950
-Connection ~ 7100 3950
-Connection ~ 7400 3350
 Connection ~ 7850 3350
 Connection ~ 8300 3350
 Connection ~ 8750 3350
 Connection ~ 9200 3350
 Connection ~ 9650 3350
 Connection ~ 10050 3350
-Connection ~ 7400 3900
-Wire Wire Line
-	6500 3950 9750 3950
 Wire Wire Line
 	6100 2600 6500 2600
 Wire Wire Line
@@ -739,7 +704,7 @@ Wire Wire Line
 Wire Wire Line
 	6250 2100 6250 800 
 Wire Wire Line
-	4125 2350 4125 2600
+	4125 2350 4125 2450
 Wire Wire Line
 	4125 2350 4200 2350
 Wire Wire Line
@@ -748,4 +713,102 @@ Connection ~ 4125 2450
 Wire Wire Line
 	4125 2550 4200 2550
 Connection ~ 4125 2550
+Wire Wire Line
+	3850 2600 3850 4150
+Wire Wire Line
+	3600 3400 4200 3400
+Wire Wire Line
+	3400 3300 4200 3300
+Wire Wire Line
+	3400 2450 2250 2450
+Wire Wire Line
+	3600 2450 3400 2450
+Wire Wire Line
+	4000 1900 4000 2450
+Wire Wire Line
+	8300 1600 8300 2500
+Wire Wire Line
+	8750 1600 8750 2500
+Wire Wire Line
+	9200 1600 9200 2500
+Wire Wire Line
+	9650 1600 9650 2500
+Wire Wire Line
+	10050 1600 10050 2500
+Wire Wire Line
+	8000 2200 8450 2200
+Wire Wire Line
+	8450 2200 8900 2200
+Wire Wire Line
+	8900 2200 9350 2200
+Wire Wire Line
+	9350 2200 9750 2200
+Wire Wire Line
+	7550 2200 8000 2200
+Wire Wire Line
+	8000 3100 8450 3100
+Wire Wire Line
+	8450 3100 8900 3100
+Wire Wire Line
+	8900 3100 9350 3100
+Wire Wire Line
+	9350 3100 9750 3100
+Wire Wire Line
+	7550 3100 8000 3100
+Wire Wire Line
+	7100 2200 7550 2200
+Wire Wire Line
+	7850 1600 7850 2500
+Wire Wire Line
+	7400 1600 7400 2500
+Wire Wire Line
+	7100 3100 7550 3100
+Wire Wire Line
+	7850 2500 7850 3350
+Wire Wire Line
+	8300 2500 8300 3350
+Wire Wire Line
+	8750 2500 8750 3350
+Wire Wire Line
+	9200 2500 9200 3350
+Wire Wire Line
+	9650 2500 9650 3350
+Wire Wire Line
+	10050 2500 10050 3350
+Wire Wire Line
+	8000 3950 8450 3950
+Wire Wire Line
+	8450 3950 8900 3950
+Wire Wire Line
+	8900 3950 9350 3950
+Wire Wire Line
+	9350 3950 9750 3950
+Wire Wire Line
+	7550 3950 8000 3950
+Wire Wire Line
+	7850 3350 7850 4700
+Wire Wire Line
+	8300 3350 8300 4700
+Wire Wire Line
+	8750 3350 8750 4700
+Wire Wire Line
+	9200 3350 9200 4700
+Wire Wire Line
+	9650 3350 9650 4700
+Wire Wire Line
+	10050 3350 10050 4700
+Wire Wire Line
+	4125 2450 4125 2550
+Wire Wire Line
+	4125 2550 4125 2600
+Wire Wire Line
+	7100 3950 7550 3950
+Wire Wire Line
+	6500 3950 7100 3950
+Connection ~ 7100 3950
+Connection ~ 7400 3350
+Wire Wire Line
+	7400 2500 7400 3350
+Wire Wire Line
+	7400 3350 7400 4700
 $EndSCHEMATC
