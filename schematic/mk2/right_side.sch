@@ -23,17 +23,6 @@ Text HLabel 1300 1500 0    60   Input ~ 0
 Text HLabel 1300 1600 0    60   Input ~ 0
 GND
 $Comp
-L mylib_experimental:MCP23017 U?
-U 1 1 5B107333
-P 3700 2550
-F 0 "U?" H 3150 3650 50  0000 C CNN
-F 1 "MCP23017" H 4150 1450 50  0000 C CNN
-F 2 "MODULE" H 3200 1450 50  0001 C CNN
-F 3 "DOCUMENTATION" H 3700 2500 50  0001 C CNN
-	1    3700 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1075AB
 P 5825 1400
@@ -132,73 +121,6 @@ F 3 "" H 6075 2600 50  0001 C CNN
 	1    6075 2600
 	1    0    0    -1  
 $EndComp
-$Comp
-L mylib_experimental:SW_PUSH SW?
-U 1 1 5B11DFAD
-P 5825 3700
-F 0 "SW?" H 5975 3810 50  0000 C CNN
-F 1 "SW_PUSH" H 5825 3620 50  0000 C CNN
-F 2 "" H 5825 3700 50  0000 C CNN
-F 3 "" H 5825 3700 50  0000 C CNN
-	1    5825 3700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mylib_experimental:D D?
-U 1 1 5B11DFB3
-P 6075 3400
-F 0 "D?" H 6075 3500 50  0000 C CNN
-F 1 "D" H 6075 3300 50  0000 C CNN
-F 2 "" H 6075 3400 50  0001 C CNN
-F 3 "" H 6075 3400 50  0001 C CNN
-	1    6075 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L mylib_experimental:SW_PUSH SW?
-U 1 1 5B11E592
-P 5825 4500
-F 0 "SW?" H 5975 4610 50  0000 C CNN
-F 1 "SW_PUSH" H 5825 4420 50  0000 C CNN
-F 2 "" H 5825 4500 50  0000 C CNN
-F 3 "" H 5825 4500 50  0000 C CNN
-	1    5825 4500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mylib_experimental:D D?
-U 1 1 5B11E598
-P 6075 4200
-F 0 "D?" H 6075 4300 50  0000 C CNN
-F 1 "D" H 6075 4100 50  0000 C CNN
-F 2 "" H 6075 4200 50  0001 C CNN
-F 3 "" H 6075 4200 50  0001 C CNN
-	1    6075 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L mylib_experimental:SW_PUSH SW?
-U 1 1 5B11E59F
-P 5825 5275
-F 0 "SW?" H 5975 5385 50  0000 C CNN
-F 1 "SW_PUSH" H 5825 5195 50  0000 C CNN
-F 2 "" H 5825 5275 50  0000 C CNN
-F 3 "" H 5825 5275 50  0000 C CNN
-	1    5825 5275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mylib_experimental:D D?
-U 1 1 5B11E5A5
-P 6075 4975
-F 0 "D?" H 6075 5075 50  0000 C CNN
-F 1 "D" H 6075 4875 50  0000 C CNN
-F 2 "" H 6075 4975 50  0001 C CNN
-F 3 "" H 6075 4975 50  0001 C CNN
-	1    6075 4975
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4650 1650
 $Comp
 L mylib_experimental:SW_PUSH SW?
 U 1 1 5B1205A8
@@ -707,28 +629,6 @@ F 3 "" H 8675 4200 50  0001 C CNN
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
-U 1 1 5B12555C
-P 8425 5275
-F 0 "SW?" H 8575 5385 50  0000 C CNN
-F 1 "SW_PUSH" H 8425 5195 50  0000 C CNN
-F 2 "" H 8425 5275 50  0000 C CNN
-F 3 "" H 8425 5275 50  0000 C CNN
-	1    8425 5275
-	0    -1   -1   0   
-$EndComp
-$Comp
-L mylib_experimental:D D?
-U 1 1 5B125562
-P 8675 4975
-F 0 "D?" H 8675 5075 50  0000 C CNN
-F 1 "D" H 8675 4875 50  0000 C CNN
-F 2 "" H 8675 4975 50  0001 C CNN
-F 3 "" H 8675 4975 50  0001 C CNN
-	1    8675 4975
-	1    0    0    -1  
-$EndComp
-$Comp
-L mylib_experimental:SW_PUSH SW?
 U 1 1 5B125576
 P 9075 1400
 F 0 "SW?" H 9225 1510 50  0000 C CNN
@@ -1049,74 +949,6 @@ Wire Wire Line
 Wire Wire Line
 	5825 2600 5925 2600
 Wire Wire Line
-	5825 3400 5925 3400
-Wire Wire Line
-	5825 4200 5925 4200
-Wire Wire Line
-	5825 4975 5925 4975
-Wire Wire Line
-	4650 1750 4725 1750
-Wire Wire Line
-	4725 1750 4725 750 
-Wire Wire Line
-	4650 1850 4750 1850
-Wire Wire Line
-	4750 1850 4750 775 
-Wire Wire Line
-	4750 775  9475 775 
-Wire Wire Line
-	4650 1950 4775 1950
-Wire Wire Line
-	4775 1950 4775 800 
-Wire Wire Line
-	8175 825  4800 825 
-Wire Wire Line
-	4800 825  4800 2050
-Wire Wire Line
-	4800 2050 4650 2050
-Wire Wire Line
-	4650 2150 4825 2150
-Wire Wire Line
-	4825 2150 4825 850 
-Wire Wire Line
-	4825 850  7525 850 
-Wire Wire Line
-	6875 875  4850 875 
-Wire Wire Line
-	4850 875  4850 2250
-Wire Wire Line
-	4850 2250 4650 2250
-Wire Wire Line
-	4650 2350 4875 2350
-Wire Wire Line
-	4875 2350 4875 900 
-Wire Wire Line
-	4875 900  6225 900 
-Wire Wire Line
-	5400 1700 5400 2500
-Wire Wire Line
-	5400 2500 4650 2500
-Wire Wire Line
-	4650 2600 5425 2600
-Wire Wire Line
-	5425 2600 5425 2450
-Wire Wire Line
-	4650 2700 5425 2700
-Wire Wire Line
-	5425 2700 5425 3200
-Wire Wire Line
-	4650 2800 5400 2800
-Wire Wire Line
-	5400 2800 5400 4000
-Wire Wire Line
-	4650 2900 5375 2900
-Wire Wire Line
-	5375 2900 5375 4800
-Wire Wire Line
-	4650 3000 5350 3000
-Wire Wire Line
-	5350 3000 5350 5575
-Wire Wire Line
 	6475 1100 6575 1100
 Wire Wire Line
 	6475 1850 6575 1850
@@ -1163,8 +995,6 @@ Wire Wire Line
 Wire Wire Line
 	8425 4200 8525 4200
 Wire Wire Line
-	8425 4975 8525 4975
-Wire Wire Line
 	9075 1100 9175 1100
 Wire Wire Line
 	9075 1850 9175 1850
@@ -1188,29 +1018,15 @@ Wire Wire Line
 	9725 4200 9825 4200
 Wire Wire Line
 	9725 4975 9825 4975
-Wire Wire Line
-	5350 5575 5825 5575
 Connection ~ 9075 5575
-Connection ~ 8425 5575
 Connection ~ 7775 5575
 Connection ~ 7125 5575
-Wire Wire Line
-	5375 4800 5825 4800
 Connection ~ 7775 4800
 Connection ~ 7125 4800
 Connection ~ 6475 5575
-Connection ~ 5825 5575
 Connection ~ 6475 4800
-Connection ~ 5825 4800
-Wire Wire Line
-	5400 4000 5825 4000
-Connection ~ 5825 4000
 Connection ~ 6475 4000
-Wire Wire Line
-	5425 3200 5825 3200
 Connection ~ 6475 3200
-Wire Wire Line
-	5425 2450 5825 2450
 Connection ~ 6475 2450
 Connection ~ 7125 2450
 Connection ~ 7775 2450
@@ -1219,8 +1035,6 @@ Connection ~ 7775 3200
 Connection ~ 8425 3200
 Connection ~ 9075 3200
 Connection ~ 8425 2450
-Wire Wire Line
-	5400 1700 5825 1700
 Connection ~ 8425 1700
 Connection ~ 7775 1700
 Connection ~ 7125 4000
@@ -1233,9 +1047,6 @@ Connection ~ 9075 2450
 Connection ~ 9075 1700
 Connection ~ 6225 1100
 Connection ~ 6225 1850
-Connection ~ 6225 2600
-Connection ~ 6225 3400
-Connection ~ 6225 4200
 Wire Wire Line
 	6875 875  6875 1100
 Wire Wire Line
@@ -1249,7 +1060,6 @@ Wire Wire Line
 Connection ~ 6875 4200
 Connection ~ 7525 4200
 Connection ~ 8175 4200
-Connection ~ 8825 4200
 Connection ~ 9475 4200
 Wire Wire Line
 	10125 750  10125 1100
@@ -1278,10 +1088,6 @@ Connection ~ 8175 1100
 Connection ~ 8825 1100
 Connection ~ 9475 1100
 Connection ~ 10125 1100
-Wire Wire Line
-	4775 800  8825 800 
-Wire Wire Line
-	4725 750  10125 750 
 Connection ~ 6475 1700
 Connection ~ 7125 1700
 Connection ~ 5825 1700
@@ -2674,10 +2480,6 @@ Wire Wire Line
 Wire Wire Line
 	9075 5575 9725 5575
 Wire Wire Line
-	8425 5575 9075 5575
-Wire Wire Line
-	7775 5575 8425 5575
-Wire Wire Line
 	7125 5575 7775 5575
 Wire Wire Line
 	7775 4800 8425 4800
@@ -2686,13 +2488,7 @@ Wire Wire Line
 Wire Wire Line
 	6475 5575 7125 5575
 Wire Wire Line
-	5825 5575 6475 5575
-Wire Wire Line
 	6475 4800 7125 4800
-Wire Wire Line
-	5825 4800 6475 4800
-Wire Wire Line
-	5825 4000 6475 4000
 Wire Wire Line
 	6475 4000 7125 4000
 Wire Wire Line
@@ -2738,19 +2534,11 @@ Wire Wire Line
 Wire Wire Line
 	6225 1850 6225 2600
 Wire Wire Line
-	6225 2600 6225 3400
-Wire Wire Line
-	6225 3400 6225 4200
-Wire Wire Line
-	6225 4200 6225 4975
-Wire Wire Line
 	6875 4200 6875 4975
 Wire Wire Line
 	7525 4200 7525 4975
 Wire Wire Line
 	8175 4200 8175 4975
-Wire Wire Line
-	8825 4200 8825 4975
 Wire Wire Line
 	9475 4200 9475 4975
 Wire Wire Line
@@ -2981,4 +2769,152 @@ Wire Wire Line
 	-3125 -8750 -2475 -8750
 Wire Wire Line
 	-3125 -8000 -2475 -8000
+Text Label 6225 1000 0    50   ~ 0
+Col8
+Text Label 6875 975  0    50   ~ 0
+Col9
+Text Label 7525 975  0    50   ~ 0
+Col10
+Text Label 8175 950  0    50   ~ 0
+Col11
+Text Label 8825 950  0    50   ~ 0
+Col12
+Text Label 9475 950  0    50   ~ 0
+Col13
+Text Label 10125 925  0    50   ~ 0
+Col14
+NoConn ~ 4650 2350
+Text Label 5475 1700 0    50   ~ 0
+Row1
+Text Label 5500 2450 0    50   ~ 0
+Row2
+Text Label 5500 3200 0    50   ~ 0
+Row3
+Text Label 5500 4000 0    50   ~ 0
+Row4
+Text Label 5475 4800 0    50   ~ 0
+Row5
+Text Label 5475 5575 0    50   ~ 0
+Row6
+Wire Wire Line
+	7775 5575 9075 5575
+$Comp
+L mylib_experimental:Conn_01x06 J?
+U 1 1 5BD1BCF4
+P 4850 2700
+F 0 "J?" H 4850 3000 50  0000 C CNN
+F 1 "Rows" V 4950 2650 50  0000 C CNN
+F 2 "" H 4850 2700 50  0001 C CNN
+F 3 "~" H 4850 2700 50  0001 C CNN
+	1    4850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L mylib_experimental:Conn_01x06 J?
+U 1 1 5BD1F905
+P 5125 4000
+F 0 "J?" H 5125 3600 50  0000 C CNN
+F 1 "Rows" V 5225 3925 50  0000 C CNN
+F 2 "" H 5125 4000 50  0001 C CNN
+F 3 "~" H 5125 4000 50  0001 C CNN
+	1    5125 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5325 4000 6475 4000
+Wire Wire Line
+	5325 4200 5325 5575
+Wire Wire Line
+	5325 5575 6475 5575
+Wire Wire Line
+	5325 4100 5350 4100
+Wire Wire Line
+	5350 4100 5350 4800
+Wire Wire Line
+	5350 4800 6475 4800
+Wire Wire Line
+	5325 3700 5325 1700
+Wire Wire Line
+	5325 1700 5825 1700
+Wire Wire Line
+	5325 3800 5350 3800
+Wire Wire Line
+	5350 3800 5350 2450
+Wire Wire Line
+	5350 2450 5825 2450
+Wire Wire Line
+	5325 3900 5375 3900
+Wire Wire Line
+	5375 3900 5375 3200
+Wire Wire Line
+	5375 3200 5825 3200
+$Comp
+L mylib_experimental:CONN_01X07 J?
+U 1 1 5C058A77
+P 4850 1950
+F 0 "J?" H 4825 2350 50  0000 L CNN
+F 1 "Columns" V 4950 1775 50  0000 L CNN
+F 2 "" H 4850 1950 50  0001 C CNN
+F 3 "" H 4850 1950 50  0001 C CNN
+	1    4850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L mylib_experimental:CONN_01X07 J?
+U 1 1 5C059082
+P 5150 1050
+F 0 "J?" H 5150 650 50  0000 C CNN
+F 1 "Columns" V 5250 1050 50  0000 C CNN
+F 2 "" H 5150 1050 50  0001 C CNN
+F 3 "" H 5150 1050 50  0001 C CNN
+	1    5150 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 850  5350 775 
+Wire Wire Line
+	5350 750  10125 750 
+Wire Wire Line
+	5375 800  5375 950 
+Wire Wire Line
+	5375 950  5350 950 
+Wire Wire Line
+	5350 775  9475 775 
+Wire Wire Line
+	5375 800  8825 800 
+Wire Wire Line
+	5400 825  5400 1050
+Wire Wire Line
+	5400 1050 5350 1050
+Wire Wire Line
+	5400 825  8175 825 
+Wire Wire Line
+	5350 1150 5425 1150
+Wire Wire Line
+	5425 1150 5425 850 
+Wire Wire Line
+	5425 850  7525 850 
+Wire Wire Line
+	5450 875  5450 1250
+Wire Wire Line
+	5450 1250 5350 1250
+Wire Wire Line
+	5450 875  6875 875 
+Wire Wire Line
+	5350 1350 5475 1350
+Wire Wire Line
+	5475 1350 5475 900 
+Wire Wire Line
+	5475 900  6225 900 
+$Comp
+L mylib_experimental:MCP23017 U?
+U 1 1 5B107333
+P 3700 2550
+F 0 "U?" H 3150 3650 50  0000 C CNN
+F 1 "MCP23017" H 4150 1450 50  0000 C CNN
+F 2 "MODULE" H 3200 1450 50  0001 C CNN
+F 3 "DOCUMENTATION" H 3700 2500 50  0001 C CNN
+	1    3700 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
