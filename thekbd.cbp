@@ -80,6 +80,49 @@
 					<Variable name="UPLOAD_PORT" value="/dev/ttyACM0" />
 				</Environment>
 			</Target>
+			<Target title="mk2 Arduino Micro">
+				<Option output="bin/mk2_micro/thekbd.elf" prefix_auto="1" extension_auto="0" />
+				<Option object_output=".objs/mk2_micro" />
+				<Option type="1" />
+				<Option compiler="avr-gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-mmcu=$(MCU)" />
+					<Add option="-DF_CPU=16000000L" />
+					<Add option="-D__AVR_ATmega32U4__" />
+					<Add option="-DUSB_VID=0x1ffb" />
+					<Add option="-DUSB_PID=0x2300" />
+					<Add option="-DTHEKBD_RELEASE=2" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/HID/src" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SPI/src" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/SoftwareSerial/src" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src" />
+					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/Wire/src/utility" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-mmcu=$(MCU)" />
+					<Add option="-lm" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='avr-objcopy -O ihex -R .eeprom -R .eesafe &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;$(TARGET_OUTPUT_FILE).hex&quot;' />
+					<Add after='avr-objcopy --no-change-warnings -j .eeprom --change-section-lma .eeprom=0 -O ihex &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;$(TARGET_OUTPUT_FILE).eep.hex&quot;' />
+					<Add after='avr-size &quot;$(TARGET_OUTPUT_FILE)&quot;' />
+					<Add after="stty -F ${UPLOAD_PORT} 1200" />
+					<Add after="sleep 2" />
+					<Add after="avrdude -V -C /etc/avrdude.conf -p${MCU} -cavr109 -P${UPLOAD_PORT} -b${UPLOAD_BAUDRATE} -D -Uflash:w:${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}.elf.hex:i" />
+				</ExtraCommands>
+				<Environment>
+					<Variable name="ARDUINO_DIR" value="$(#arduino)" />
+					<Variable name="BOARD" value="Pololu A-Star 32U4" />
+					<Variable name="BOARD_ID" value="micro" />
+					<Variable name="MCU" value="atmega32u4" />
+					<Variable name="UPLOAD_BAUDRATE" value="57600" />
+					<Variable name="UPLOAD_PORT" value="/dev/ttyACM1___" />
+				</Environment>
+			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Os" />
@@ -181,6 +224,7 @@
 		<Unit filename="libraries/libraries.cpp" />
 		<Unit filename="mapping.cpp" />
 		<Unit filename="mk1_firmware.cpp" />
+		<Unit filename="mk2_firmware.cpp" />
 		<Extensions>
 			<envvars />
 			<code_completion />

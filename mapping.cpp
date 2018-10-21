@@ -53,4 +53,10 @@ extern const uint8_t layoutTable[keysTotalNumber]={
     HID_KEYBOARD_F1, HID_KEYBOARD_ESCAPE
 };
 
-#endif // THEKBD_RELEASE==1
+#elif THEKBD_RELEASE==2
+extern const uint8_t layoutTable[keysTotalNumber]={
+    0
+};
+#else
+    #error "Unsupported release!"
+#endif // THEKBD_RELEASE
