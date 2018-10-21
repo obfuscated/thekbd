@@ -1,8 +1,9 @@
 #include "constants.h"
 #include <stdint.h>
-#include "Arduino.h"
 
 #include "HIDTables.h"
+
+#if THEKBD_RELEASE==1
 
 extern const uint8_t layoutTable[keysTotalNumber]={
     // row 0 right
@@ -51,3 +52,5 @@ extern const uint8_t layoutTable[keysTotalNumber]={
     HID_KEYBOARD_F6, HID_KEYBOARD_F5,  HID_KEYBOARD_F4,  HID_KEYBOARD_F3,  HID_KEYBOARD_F2,
     HID_KEYBOARD_F1, HID_KEYBOARD_ESCAPE
 };
+
+#endif // THEKBD_RELEASE==1

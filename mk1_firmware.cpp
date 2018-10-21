@@ -1,3 +1,4 @@
+#if THEKBD_RELEASE==1
 #include <Arduino.h>
 #include <Wire.h>
 #include <limits.h>
@@ -261,3 +262,5 @@ void loop()
     MCP23017::iterate(pressedState, 7);
     pressedState.sendReport();
 }
+
+#endif // THEKBD_RELEASE==1
