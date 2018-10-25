@@ -108,7 +108,7 @@ F 1 "D" H 6725 1400 50  0000 C CNN
 F 2 "" H 6725 1500 50  0001 C CNN
 F 3 "" H 6725 1500 50  0001 C CNN
 	1    6725 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -130,7 +130,7 @@ F 1 "D" H 6725 2150 50  0000 C CNN
 F 2 "" H 6725 2250 50  0001 C CNN
 F 3 "" H 6725 2250 50  0001 C CNN
 	1    6725 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -152,7 +152,7 @@ F 1 "D" H 6725 2900 50  0000 C CNN
 F 2 "" H 6725 3000 50  0001 C CNN
 F 3 "" H 6725 3000 50  0001 C CNN
 	1    6725 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -174,7 +174,7 @@ F 1 "D" H 6725 3700 50  0000 C CNN
 F 2 "" H 6725 3800 50  0001 C CNN
 F 3 "" H 6725 3800 50  0001 C CNN
 	1    6725 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -196,7 +196,7 @@ F 1 "D" H 6725 4500 50  0000 C CNN
 F 2 "" H 6725 4600 50  0001 C CNN
 F 3 "" H 6725 4600 50  0001 C CNN
 	1    6725 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -218,7 +218,7 @@ F 1 "D" H 6725 5275 50  0000 C CNN
 F 2 "" H 6725 5375 50  0001 C CNN
 F 3 "" H 6725 5375 50  0001 C CNN
 	1    6725 5375
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -240,7 +240,7 @@ F 1 "D" H 7375 1400 50  0000 C CNN
 F 2 "" H 7375 1500 50  0001 C CNN
 F 3 "" H 7375 1500 50  0001 C CNN
 	1    7375 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -262,7 +262,7 @@ F 1 "D" H 7375 2150 50  0000 C CNN
 F 2 "" H 7375 2250 50  0001 C CNN
 F 3 "" H 7375 2250 50  0001 C CNN
 	1    7375 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -284,7 +284,7 @@ F 1 "D" H 7375 2900 50  0000 C CNN
 F 2 "" H 7375 3000 50  0001 C CNN
 F 3 "" H 7375 3000 50  0001 C CNN
 	1    7375 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -306,7 +306,7 @@ F 1 "D" H 7375 3700 50  0000 C CNN
 F 2 "" H 7375 3800 50  0001 C CNN
 F 3 "" H 7375 3800 50  0001 C CNN
 	1    7375 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -328,7 +328,7 @@ F 1 "D" H 7375 4500 50  0000 C CNN
 F 2 "" H 7375 4600 50  0001 C CNN
 F 3 "" H 7375 4600 50  0001 C CNN
 	1    7375 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -350,7 +350,7 @@ F 1 "D" H 7375 5275 50  0000 C CNN
 F 2 "" H 7375 5375 50  0001 C CNN
 F 3 "" H 7375 5375 50  0001 C CNN
 	1    7375 5375
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -372,7 +372,7 @@ F 1 "D" H 8025 1400 50  0000 C CNN
 F 2 "" H 8025 1500 50  0001 C CNN
 F 3 "" H 8025 1500 50  0001 C CNN
 	1    8025 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -394,7 +394,7 @@ F 1 "D" H 8025 2150 50  0000 C CNN
 F 2 "" H 8025 2250 50  0001 C CNN
 F 3 "" H 8025 2250 50  0001 C CNN
 	1    8025 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -416,7 +416,7 @@ F 1 "D" H 8025 2900 50  0000 C CNN
 F 2 "" H 8025 3000 50  0001 C CNN
 F 3 "" H 8025 3000 50  0001 C CNN
 	1    8025 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -438,7 +438,7 @@ F 1 "D" H 8025 3700 50  0000 C CNN
 F 2 "" H 8025 3800 50  0001 C CNN
 F 3 "" H 8025 3800 50  0001 C CNN
 	1    8025 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -460,7 +460,7 @@ F 1 "D" H 8025 4500 50  0000 C CNN
 F 2 "" H 8025 4600 50  0001 C CNN
 F 3 "" H 8025 4600 50  0001 C CNN
 	1    8025 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -482,7 +482,7 @@ F 1 "D" H 8675 1400 50  0000 C CNN
 F 2 "" H 8675 1500 50  0001 C CNN
 F 3 "" H 8675 1500 50  0001 C CNN
 	1    8675 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -504,7 +504,7 @@ F 1 "D" H 8675 2150 50  0000 C CNN
 F 2 "" H 8675 2250 50  0001 C CNN
 F 3 "" H 8675 2250 50  0001 C CNN
 	1    8675 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -526,7 +526,7 @@ F 1 "D" H 8675 2900 50  0000 C CNN
 F 2 "" H 8675 3000 50  0001 C CNN
 F 3 "" H 8675 3000 50  0001 C CNN
 	1    8675 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -548,7 +548,7 @@ F 1 "D" H 8675 3700 50  0000 C CNN
 F 2 "" H 8675 3800 50  0001 C CNN
 F 3 "" H 8675 3800 50  0001 C CNN
 	1    8675 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -570,7 +570,7 @@ F 1 "D" H 8675 4500 50  0000 C CNN
 F 2 "" H 8675 4600 50  0001 C CNN
 F 3 "" H 8675 4600 50  0001 C CNN
 	1    8675 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -592,7 +592,7 @@ F 1 "D" H 8675 5275 50  0000 C CNN
 F 2 "" H 8675 5375 50  0001 C CNN
 F 3 "" H 8675 5375 50  0001 C CNN
 	1    8675 5375
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -614,7 +614,7 @@ F 1 "D" H 9325 1400 50  0000 C CNN
 F 2 "" H 9325 1500 50  0001 C CNN
 F 3 "" H 9325 1500 50  0001 C CNN
 	1    9325 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -636,7 +636,7 @@ F 1 "D" H 9325 2150 50  0000 C CNN
 F 2 "" H 9325 2250 50  0001 C CNN
 F 3 "" H 9325 2250 50  0001 C CNN
 	1    9325 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -658,7 +658,7 @@ F 1 "D" H 9325 2900 50  0000 C CNN
 F 2 "" H 9325 3000 50  0001 C CNN
 F 3 "" H 9325 3000 50  0001 C CNN
 	1    9325 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -680,7 +680,7 @@ F 1 "D" H 9325 3700 50  0000 C CNN
 F 2 "" H 9325 3800 50  0001 C CNN
 F 3 "" H 9325 3800 50  0001 C CNN
 	1    9325 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -702,7 +702,7 @@ F 1 "D" H 9325 4500 50  0000 C CNN
 F 2 "" H 9325 4600 50  0001 C CNN
 F 3 "" H 9325 4600 50  0001 C CNN
 	1    9325 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -724,7 +724,7 @@ F 1 "D" H 9325 5275 50  0000 C CNN
 F 2 "" H 9325 5375 50  0001 C CNN
 F 3 "" H 9325 5375 50  0001 C CNN
 	1    9325 5375
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -746,7 +746,7 @@ F 1 "D" H 9975 1400 50  0000 C CNN
 F 2 "" H 9975 1500 50  0001 C CNN
 F 3 "" H 9975 1500 50  0001 C CNN
 	1    9975 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -768,7 +768,7 @@ F 1 "D" H 9975 2150 50  0000 C CNN
 F 2 "" H 9975 2250 50  0001 C CNN
 F 3 "" H 9975 2250 50  0001 C CNN
 	1    9975 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -790,7 +790,7 @@ F 1 "D" H 9975 2900 50  0000 C CNN
 F 2 "" H 9975 3000 50  0001 C CNN
 F 3 "" H 9975 3000 50  0001 C CNN
 	1    9975 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -812,7 +812,7 @@ F 1 "D" H 9975 3700 50  0000 C CNN
 F 2 "" H 9975 3800 50  0001 C CNN
 F 3 "" H 9975 3800 50  0001 C CNN
 	1    9975 3800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -834,7 +834,7 @@ F 1 "D" H 9975 4500 50  0000 C CNN
 F 2 "" H 9975 4600 50  0001 C CNN
 F 3 "" H 9975 4600 50  0001 C CNN
 	1    9975 4600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -856,7 +856,7 @@ F 1 "D" H 9975 5275 50  0000 C CNN
 F 2 "" H 9975 5375 50  0001 C CNN
 F 3 "" H 9975 5375 50  0001 C CNN
 	1    9975 5375
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -878,7 +878,7 @@ F 1 "D" H 10625 1400 50  0000 C CNN
 F 2 "" H 10625 1500 50  0001 C CNN
 F 3 "" H 10625 1500 50  0001 C CNN
 	1    10625 1500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -900,7 +900,7 @@ F 1 "D" H 10625 2150 50  0000 C CNN
 F 2 "" H 10625 2250 50  0001 C CNN
 F 3 "" H 10625 2250 50  0001 C CNN
 	1    10625 2250
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:SW_PUSH SW?
@@ -922,7 +922,7 @@ F 1 "D" H 10625 2900 50  0000 C CNN
 F 2 "" H 10625 3000 50  0001 C CNN
 F 3 "" H 10625 3000 50  0001 C CNN
 	1    10625 3000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L mylib_experimental:CONN_01X07 J?
