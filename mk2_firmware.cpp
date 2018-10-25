@@ -264,7 +264,7 @@ void loop()
         iterationTimeMS=currentTime;
     }
     Native::iterate(pressedState, 0);
-    //MCP23017::iterate(pressedState, 7);
+    MCP23017::iterate(pressedState, 7);
     pressedState.sendReport();
 }
 
