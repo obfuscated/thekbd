@@ -17,6 +17,7 @@
 					<Add option="-DF_CPU=16000000L" />
 					<Add option="-D__AVR_ATmega328P__" />
 					<Add option="-DTHEKBD_RELEASE=1" />
+					<Add option="-DUSE_SPI=0" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/avr/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
@@ -54,6 +55,7 @@
 					<Add option="-DUSB_VID=0x2341" />
 					<Add option="-DUSB_PID=0x803C" />
 					<Add option="-DTHEKBD_RELEASE=1" />
+					<Add option="-DUSE_SPI=0" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/avr/libraries" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
@@ -93,6 +95,7 @@
 					<Add option="-DUSB_VID=0x1ffb" />
 					<Add option="-DUSB_PID=0x2300" />
 					<Add option="-DTHEKBD_RELEASE=2" />
+					<Add option="-DUSE_SPI=1" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/cores/arduino" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/variants/micro" />
 					<Add directory="$(ARDUINO_DIR)/hardware/arduino/avr/libraries/HID/src" />
@@ -145,7 +148,6 @@
 			<Add option="-DUSE_SD=0" />
 			<Add option="-DUSE_SERVO=0" />
 			<Add option="-DUSE_SOFTSERIAL=0" />
-			<Add option="-DUSE_SPI=0" />
 			<Add option="-DUSE_STEPPER=0" />
 			<Add option="-DUSE_TINYGPS=0" />
 			<Add option="-DUSE_WIRE=1" />
@@ -221,6 +223,15 @@
 		<Unit filename="libraries/HID/src/LEDs.h" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.cpp" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.h" />
+		<Unit filename="libraries/display_font.h">
+			<Option target="mk2 Arduino Micro" />
+		</Unit>
+		<Unit filename="libraries/display_ssd1306.cpp">
+			<Option target="mk2 Arduino Micro" />
+		</Unit>
+		<Unit filename="libraries/display_ssd1306.h">
+			<Option target="mk2 Arduino Micro" />
+		</Unit>
 		<Unit filename="libraries/libraries.cpp" />
 		<Unit filename="mapping.cpp" />
 		<Unit filename="mk1_firmware.cpp" />

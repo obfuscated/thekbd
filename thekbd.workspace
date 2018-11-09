@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="thekbd Workspace">
+		<Project filename="thekbd.cbp" />
+		<Project filename="tools/font_generator.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

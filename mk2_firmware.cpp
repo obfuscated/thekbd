@@ -5,6 +5,9 @@
 
 #include "constants.h"
 
+#include "fonts/comic_neue_regular_16px.h"
+#include "libraries/display_ssd1306.h"
+
 #include "KeyboardioHID.h"
 
 template <typename T, int N>
@@ -230,16 +233,56 @@ namespace MCP23017
 
 } // namespace MCP23017
 
+namespace Display
+{
+    const uint8_t cs=4;
+    const uint8_t dc=5;
+    const uint8_t rst=SS; // The RXT pin on the pololu A-Star 32u4 mini ulv
+
+    SSD1306 display(dc, rst, cs);
+
+    void setup(void)
+    {
+        display.begin();
+        display.setFont(&testFont);
+    }
+
+    /// This is a slow function which does a full draw.
+    void fullDraw(int8_t layerNo)
+    {
+        display.fillScreen(BLACK);
+
+        if (layerNo != 0 && layerNo != 1)
+        {
+            const char *str = "Layer error!";
+            display.print(2, 20, WHITE, str);
+        }
+        else
+        {
+            int8_t xOffset = 2;
+            xOffset += display.print(xOffset, 20, WHITE, "Layer ");
+            xOffset += display.printNumber(xOffset, 20, WHITE, layerNo + 1);
+            /*xOffset +=*/ display.print(xOffset, 20, WHITE, " active!");
+        }
+
+        display.drawFastHLineInternal(0, 22, 128, WHITE);
+    }
+
+} // namespace Display
+
 void setup()
 {
     Native::setup();
     MCP23017::setup();
+    Display::setup();
 
     Keyboard.begin();
 }
 
 uint32_t iterations=0;
+int8_t fullDraws = 0;
 unsigned long iterationTimeMS=0;
+unsigned long lastDrawTimeMS=0;
 extern const uint8_t layoutTable[];
 
 PressedState pressedState(layoutTable);
@@ -259,13 +302,23 @@ void loop()
         Serial.print(MCP23017::writeErrors);
         Serial.print(", ");
         Serial.print(MCP23017::readErrors);
-        Serial.println(")");
+        Serial.print(") full draws: ");
+        Serial.println(fullDraws);
 
         iterationTimeMS=currentTime;
+        fullDraws = 0;
     }
     Native::iterate(pressedState, 0);
     MCP23017::iterate(pressedState, 7);
     pressedState.sendReport();
+
+    // Draw on the display every 100ms
+    if (timeDifference(currentTime, lastDrawTimeMS) > 100)
+    {
+        Display::fullDraw(0);
+        fullDraws++;
+        lastDrawTimeMS = currentTime;
+    }
 }
 
 #endif // THEKBD_RELEASE==2
