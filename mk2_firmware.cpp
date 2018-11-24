@@ -16,12 +16,14 @@ constexpr int countof(T const (&)[N])
     return N;
 }
 
-void print(bool released, int row, int column)
+void print(bool released, int row, int column, int scanCode)
 {
-    Serial.print(released ? "released: " : "pressed: ");
+    Serial.print(released ? F("released: ") : F("pressed: "));
     Serial.print(column);
-    Serial.print(" ");
-    Serial.println(row);
+    Serial.print(F(" "));
+    Serial.print(row);
+    Serial.print(F(" scan code: "));
+    Serial.println(scanCode);
 }
 
 unsigned long timeDifference(unsigned long a, unsigned long b)
@@ -72,22 +74,15 @@ struct PressedState
     void stateChange(bool pressed, uint8_t row, uint8_t column)
     {
         uint8_t scanCode=layoutTable[row*2*countColumns+column];
+        print(!pressed, row, column, scanCode);
         if (scanCode>0)
         {
-            Serial.print(pressed ? "pressed key:" : "released key:");
-            Serial.print(row);
-            Serial.print(" ");
-            Serial.print(column);
-            Serial.print(" ");
-            Serial.println(scanCode);
             if (pressed)
                 Keyboard.press(scanCode);
             else
                 Keyboard.release(scanCode);
             hasChanges=true;
         }
-        else
-            print(!pressed, row, column);
     }
     void sendReport()
     {
