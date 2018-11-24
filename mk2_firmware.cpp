@@ -73,7 +73,7 @@ struct PressedState
 
     void stateChange(bool pressed, uint8_t row, uint8_t column)
     {
-        uint8_t scanCode=layoutTable[row*2*countColumns+column];
+        uint8_t scanCode=pgm_read_byte(&layoutTable[row*2*countColumns+column]);
         print(!pressed, row, column, scanCode);
         if (scanCode>0)
         {

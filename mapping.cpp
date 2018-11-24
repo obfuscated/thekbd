@@ -1,5 +1,6 @@
 #include "constants.h"
 #include <stdint.h>
+#include <avr/pgmspace.h>
 
 #include "HIDTables.h"
 
@@ -54,7 +55,7 @@ extern const uint8_t layoutTable[keysTotalNumber]={
 };
 
 #elif THEKBD_RELEASE==2
-extern const uint8_t layoutTable[keysTotalNumber]={
+extern const uint8_t layoutTable[keysTotalNumber] PROGMEM = {
     0
 };
 #else
