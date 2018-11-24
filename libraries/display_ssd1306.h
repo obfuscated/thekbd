@@ -32,7 +32,7 @@ struct SSD1306
     void drawFastHLineInternal(int16_t x, int16_t y, int16_t w, uint16_t color);
     void drawFastVLineInternal(int16_t x, int16_t __y, int16_t __h, uint16_t color);
 private:
-    int8_t sclk, dc, rst, cs;
+    int8_t dc, rst, cs;
     PortReg *csport, *dcport;
     PortMask cspinmask, dcpinmask;
 

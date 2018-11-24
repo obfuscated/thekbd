@@ -237,7 +237,7 @@ namespace Display
 {
     const uint8_t cs=4;
     const uint8_t dc=5;
-    const uint8_t rst=SS; // The RXT pin on the pololu A-Star 32u4 mini ulv
+    const uint8_t rst=13;
 
     SSD1306 display(dc, rst, cs);
 
@@ -265,7 +265,8 @@ namespace Display
             /*xOffset +=*/ display.print(xOffset, 20, WHITE, " active!");
         }
 
-        display.drawFastHLineInternal(0, 22, 128, WHITE);
+        display.drawFastHLineInternal(0, 22, 127, WHITE);
+        display.display();
     }
 
 } // namespace Display
