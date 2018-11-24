@@ -1612,4 +1612,6 @@ Wire Wire Line
 Wire Wire Line
 	4225 1775 4225 3025
 NoConn ~ 4100 2275
+NoConn ~ 3325 5175
+NoConn ~ 3325 5475
 $EndSCHEMATC
