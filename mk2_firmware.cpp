@@ -268,6 +268,7 @@ namespace Display
 
 void setup()
 {
+    Serial.begin(9600);
     Native::setup();
     MCP23017::setup();
     Display::setup();
