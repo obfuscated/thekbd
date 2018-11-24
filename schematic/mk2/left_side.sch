@@ -24,7 +24,6 @@ F 3 "" H 4600 5525 60  0001 C CNN
 	1    2800 1775
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4100 1775
 NoConn ~ 1500 2075
 NoConn ~ 1500 875 
 NoConn ~ 1500 975 
@@ -1078,8 +1077,6 @@ Wire Wire Line
 Wire Wire Line
 	2975 6400 2975 6800
 Wire Wire Line
-	4100 2275 4225 2275
-Wire Wire Line
 	2225 5775 2175 5775
 Wire Wire Line
 	2175 5775 2175 6150
@@ -1328,8 +1325,6 @@ Wire Wire Line
 	2200 3000 2200 3200
 Wire Wire Line
 	1700 2750 1700 3200
-Wire Wire Line
-	4225 2275 4225 3025
 Wire Wire Line
 	4225 3025 2300 3025
 Wire Wire Line
@@ -1612,4 +1607,9 @@ Text Label 6175 5975 0    50   ~ 0
 Row6
 Wire Wire Line
 	7125 5975 8425 5975
+Wire Wire Line
+	4100 1775 4225 1775
+Wire Wire Line
+	4225 1775 4225 3025
+NoConn ~ 4100 2275
 $EndSCHEMATC
