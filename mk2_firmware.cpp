@@ -291,15 +291,15 @@ void loop()
     iterations++;
     if (iterations%1000==0)
     {
-        Serial.print("iterations: ");
+        Serial.print(F("iterations: "));
         Serial.print(iterations);
-        Serial.print(" time: ");
+        Serial.print(F(" time: "));
         Serial.print(timeDifference(currentTime, iterationTimeMS));
-        Serial.print(" (errors: ");
+        Serial.print(F(" (errors: "));
         Serial.print(MCP23017::writeErrors);
-        Serial.print(", ");
+        Serial.print(F(", "));
         Serial.print(MCP23017::readErrors);
-        Serial.print(") full draws: ");
+        Serial.print(F(") full draws: "));
         Serial.println(fullDraws);
 
         iterationTimeMS=currentTime;
