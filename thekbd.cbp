@@ -130,6 +130,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Os" />
+			<Add option="-Wextra" />
 			<Add option="-Wall" />
 			<Add option="-fno-exceptions" />
 			<Add option="-ffunction-sections" />
