@@ -1,6 +1,7 @@
 #include "display_ssd1306.h"
 #include <SPI.h>
 #include "display_font.h"
+#include "common.h"
 
 #define SSD1306_EXTERNALVCC 0x1
 #define SSD1306_SWITCHCAPVCC 0x2
@@ -50,12 +51,6 @@
 #define SSD1306_LEFT_HORIZONTAL_SCROLL 0x27
 #define SSD1306_VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL 0x29
 #define SSD1306_VERTICAL_AND_LEFT_HORIZONTAL_SCROLL 0x2A
-
-template <typename T, int N>
-constexpr int countof(T const (&)[N])
-{
-    return N;
-}
 
 static uint8_t buffer[SSD1306::height * (SSD1306::width / 8)] = {
     0

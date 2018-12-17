@@ -228,6 +228,7 @@
 		<Unit filename="libraries/HID/src/LEDs.h" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.cpp" />
 		<Unit filename="libraries/HID/src/MultiReport/Keyboard.h" />
+		<Unit filename="libraries/common.h" />
 		<Unit filename="libraries/display_font.h">
 			<Option target="mk2 Arduino Micro" />
 		</Unit>
@@ -241,6 +242,7 @@
 		<Unit filename="mapping.cpp" />
 		<Unit filename="mk1_firmware.cpp" />
 		<Unit filename="mk2_firmware.cpp" />
+		<Unit filename="pressed_state.h" />
 		<Extensions>
 			<envvars />
 			<code_completion />
