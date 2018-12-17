@@ -108,6 +108,7 @@
 					<Add option="-s" />
 					<Add option="-mmcu=$(MCU)" />
 					<Add option="-lm" />
+					<Add option="-Wl,-Map,$(TARGET_OUTPUT_DIR)/linker.map" />
 				</Linker>
 				<ExtraCommands>
 					<Add after='avr-objcopy -O ihex -R .eeprom -R .eesafe &quot;$(TARGET_OUTPUT_FILE)&quot; &quot;$(TARGET_OUTPUT_FILE).hex&quot;' />
