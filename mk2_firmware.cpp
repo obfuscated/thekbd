@@ -28,6 +28,7 @@ namespace Native
         static_assert(countof(rowPins)==countRows, "diff");
     }
 
+    template<typename PressedState>
     void iterate(PressedState &pressedState, uint8_t offsetColumn)
     {
         uint8_t row=countRows-1;
@@ -118,6 +119,7 @@ namespace MCP23017
         writeRegister(IPOLA, 0xFF); // reverse the polarity of the input
     }
 
+    template<typename PressedState>
     void iterate(PressedState &pressedState, uint8_t offsetColumn)
     {
         uint8_t row=countRows-1;
@@ -181,13 +183,16 @@ uint32_t iterations=0;
 int8_t fullDraws = 0;
 unsigned long iterationTimeMS=0;
 unsigned long lastDrawTimeMS=0;
+
 extern const uint8_t layoutTable[] PROGMEM;
 
-PressedState pressedState;
+//SingleLayerPressedState pressedState;
+MultiLayerPressedState pressedState;
 
 void setup()
 {
-    pressedState.init(layoutTable);
+//    pressedState.init(layoutTable);
+    pressedState.init(layoutTable, numLayers);
 
     Serial.begin(9600);
     Native::setup();
@@ -225,7 +230,7 @@ void loop()
     // Draw on the display every 100ms
     if (timeDifference(currentTime, lastDrawTimeMS) > 100)
     {
-        Display::fullDraw(0);
+        Display::fullDraw(pressedState.getAcitveLayer());
         fullDraws++;
         lastDrawTimeMS = currentTime;
     }
