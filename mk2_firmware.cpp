@@ -36,13 +36,17 @@ unsigned long timeDifference(unsigned long a, unsigned long b)
 
 struct PressedState
 {
-    PressedState(const uint8_t *layoutTable) :
-        currentTime(0),
-        layoutTable(layoutTable),
-        hasChanges(false)
+    PressedState()
+    {}
+
+    void init(const uint8_t *layoutTable)
     {
-        memset(state, 0, sizeof(int8_t)*keysTotalNumber);
-        memset(changeTime, 0, sizeof(unsigned long)*keysTotalNumber);
+        currentTime = 0;
+        this->layoutTable = layoutTable;
+        hasChanges = false;
+
+        memset(state, 0, sizeof(int8_t)*countof(state));
+        memset(changeTime, 0, sizeof(unsigned long)*countof(state));
     }
     int8_t get(uint8_t row, uint8_t column) const { return state[row*2*countColumns+column]; }
 //    void set(int row, int column, int8_t newState) { state[row*2*countColumns+column]=newState; }
@@ -97,7 +101,7 @@ private:
     int8_t state[keysTotalNumber];
     unsigned long changeTime[keysTotalNumber];
     unsigned long currentTime;
-    const uint8_t * const layoutTable;
+    const uint8_t *layoutTable;
     bool hasChanges;
 };
 
@@ -266,8 +270,18 @@ namespace Display
 
 } // namespace Display
 
+uint32_t iterations=0;
+int8_t fullDraws = 0;
+unsigned long iterationTimeMS=0;
+unsigned long lastDrawTimeMS=0;
+extern const uint8_t layoutTable[] PROGMEM;
+
+PressedState pressedState;
+
 void setup()
 {
+    pressedState.init(layoutTable);
+
     Serial.begin(9600);
     Native::setup();
     MCP23017::setup();
@@ -275,14 +289,6 @@ void setup()
 
     Keyboard.begin();
 }
-
-uint32_t iterations=0;
-int8_t fullDraws = 0;
-unsigned long iterationTimeMS=0;
-unsigned long lastDrawTimeMS=0;
-extern const uint8_t layoutTable[];
-
-PressedState pressedState(layoutTable);
 
 void loop()
 {
