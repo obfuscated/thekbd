@@ -6,7 +6,8 @@
 #include "constants.h"
 
 #include "fonts/comic_neue_regular_16px.h"
-#include "fonts/comic_neue_regular_32px.h"
+#include "fonts/comic_neue_regular_24px.h"
+//#include "fonts/comic_neue_regular_32px.h"
 #include "fonts/comic_neue_regular_48px.h"
 #include "libraries/display_ssd1306.h"
 
@@ -177,8 +178,9 @@ namespace Display
             xOffset += display.print(xOffset, yOffset, WHITE, "L");
             xOffset += display.printNumber(xOffset, yOffset, WHITE, layerNo + 1);
 
-            display.setFont(&comicNeue16Font);
-            /*xOffset +=*/ display.print(xOffset, yOffset, WHITE, " active!");
+            display.setFont(&comicNeue24Font);
+            xOffset=51; // hard code this to the xAdvance of L and 2.
+            /*xOffset +=*/ display.print(xOffset+2, yOffset, WHITE, "active!");
         }
 
         display.drawFastHLineInternal(0, yOffset+2, 127, WHITE);
