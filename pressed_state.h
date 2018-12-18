@@ -143,13 +143,25 @@ struct MultiLayerPressedState
                 for (int8_t &keyState : state)
                     keyState = 0;
 
-                Keyboard.releaseAll();
-
                 Serial.print(F("Switching to layer: "));
                 Serial.print(activeLayer);
                 Serial.println(F(" all state is reset"));
 
                 hasChanges=true;
+            }
+
+            if (scanCode == KEY_LAYER_SELECT_LEFT || scanCode == KEY_LAYER_SELECT_RIGHT)
+            {
+                if (pressed)
+                {
+                    activeLayer = 1;
+                    Serial.println(F("Selecting layer 1"));
+                }
+                else
+                {
+                    activeLayer = 0;
+                    Serial.println(F("Selecting layer 1"));
+                }
             }
             return;
         }
