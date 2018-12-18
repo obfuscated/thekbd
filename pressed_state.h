@@ -98,6 +98,7 @@ struct MultiLayerPressedState
         hasChanges = false;
 
         memset(state, 0, sizeof(int8_t)*countof(state));
+        memset(pressedScanCode, 0, sizeof(uint8_t)*countof(pressedScanCode));
         memset(changeTime, 0, sizeof(unsigned long)*countof(state));
     }
     int8_t get(uint8_t row, uint8_t column) const { return state[row*2*countColumns+column]; }
@@ -128,9 +129,19 @@ struct MultiLayerPressedState
 
     void stateChange(bool pressed, uint8_t row, uint8_t column)
     {
-        uint16_t index=uint16_t(activeLayer)*countRows*countColumns*2;
-        index+=row*2*countColumns+column;
-        uint8_t scanCode=pgm_read_byte(&layoutTable[index]);
+        uint8_t scanCode;
+        if (pressed)
+        {
+            uint16_t index=uint16_t(activeLayer)*countRows*countColumns*2;
+            index+=row*2*countColumns+column;
+            scanCode=pgm_read_byte(&layoutTable[index]);
+            pressedScanCode[row*2*countColumns+column]=scanCode;
+        }
+        else
+        {
+            scanCode=pressedScanCode[row*2*countColumns+column];
+            pressedScanCode[row*2*countColumns+column]=0;
+        }
 
         // It is assumed that layer keys don't change positions in different layers!
         if (scanCode>=KEY_LAYER_MIN && scanCode<=KEY_LAYER_MAX)
@@ -189,6 +200,12 @@ struct MultiLayerPressedState
     int8_t getAcitveLayer() const { return activeLayer; }
 private:
     int8_t state[keysTotalNumber];
+    /// Scan code of the key during key press. We need to store this because if the layer changes
+    /// between the press and release event then the OS would see the wrong key being released and
+    /// would start to repeat the pressed key.
+    /// Now when we store the scanCode we always release the same scanCode and this problem is
+    /// prevented.
+    uint8_t pressedScanCode[keysTotalNumber];
     unsigned long changeTime[keysTotalNumber];
     unsigned long currentTime;
     const uint8_t *layoutTable;
