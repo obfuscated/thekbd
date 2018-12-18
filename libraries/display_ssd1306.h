@@ -20,6 +20,9 @@ struct SSD1306
     void setContrast(uint8_t c);
     void setFont(const struct Font *font);
 
+    void disable();
+    void enable();
+
     void fillScreen(uint16_t color);
     void fillRect(int8_t x, int8_t y, int8_t w, int8_t h,uint16_t color);
 
@@ -37,4 +40,5 @@ private:
     PortMask cspinmask, dcpinmask;
 
     const Font *font;
+    bool enabled;
 };

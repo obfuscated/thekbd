@@ -197,6 +197,7 @@ unsigned long lastIterationDurationMS=0;
 int8_t fullDraws = 0;
 unsigned long iterationTimeMS=0;
 unsigned long lastDrawTimeMS=0;
+unsigned long lastActiveTimeMS=0;
 
 extern const uint8_t layoutTable[] PROGMEM;
 
@@ -240,13 +241,25 @@ void loop()
     }
     Native::iterate(pressedState, 0);
     MCP23017::iterate(pressedState, 7);
-    pressedState.sendReport();
+    const bool active=pressedState.sendReport();
+    if (active)
+        lastActiveTimeMS=currentTime;
 
     // Draw on the display every 100ms
     if (timeDifference(currentTime, lastDrawTimeMS) > 100)
     {
-        Display::fullDraw(pressedState.getAcitveLayer(), lastIterationDurationMS);
-        fullDraws++;
+        if (timeDifference(currentTime, lastActiveTimeMS) <= 10*60*1000UL)
+        {
+            Display::display.enable();
+            Display::fullDraw(pressedState.getAcitveLayer(), lastIterationDurationMS);
+            fullDraws++;
+        }
+        else
+        {
+            // Disable the display after 10 minutes of inactivity.
+            // This is done to preserve the OLED display.
+            Display::display.disable();
+        }
         lastDrawTimeMS = currentTime;
     }
 }

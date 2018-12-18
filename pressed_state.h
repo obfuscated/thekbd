@@ -67,14 +67,16 @@ struct SingleLayerPressedState
             hasChanges=true;
         }
     }
-    void sendReport()
+    bool sendReport()
     {
         if (hasChanges)
         {
             Keyboard.sendReport();
             hasChanges=false;
+            return true;
         }
-
+        else
+            return false;
     }
 private:
     int8_t state[keysTotalNumber];
@@ -179,14 +181,16 @@ struct MultiLayerPressedState
             hasChanges=true;
         }
     }
-    void sendReport()
+    bool sendReport()
     {
         if (hasChanges)
         {
             Keyboard.sendReport();
             hasChanges=false;
+            return true;
         }
-
+        else
+            return false;
     }
 
     int8_t getAcitveLayer() const { return activeLayer; }

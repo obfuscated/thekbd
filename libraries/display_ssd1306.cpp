@@ -148,6 +148,7 @@ void SSD1306::begin(bool reset)
     sendCommand(SSD1306_DEACTIVATE_SCROLL);
 
     sendCommand(SSD1306_DISPLAYON);//--turn on oled panel
+    enabled=true;
 }
 
 void SSD1306::display()
@@ -178,6 +179,24 @@ void SSD1306::setContrast(uint8_t c)
 void SSD1306::setFont(const Font *font)
 {
     this->font = font;
+}
+
+void SSD1306::disable()
+{
+    if (enabled)
+    {
+        enabled=false;
+        sendCommand(SSD1306_DISPLAYOFF);
+    }
+}
+
+void SSD1306::enable()
+{
+    if (!enabled)
+    {
+        enabled=true;
+        sendCommand(SSD1306_DISPLAYON);
+    }
 }
 
 void SSD1306::fillScreen(uint16_t color)
