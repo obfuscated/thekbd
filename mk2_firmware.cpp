@@ -159,15 +159,17 @@ namespace Display
     }
 
     /// This is a slow function which does a full draw.
-    void fullDraw(int8_t layerNo)
+    void fullDraw(int8_t layerNo, unsigned long lastIterationDurationMS)
     {
         display.fillScreen(BLACK);
+
+        display.setFont(&comicNeue16Font);
+        display.printNumber(80, 16, WHITE, lastIterationDurationMS);
 
         int yOffset=48+2;
 
         if (layerNo != 0 && layerNo != 1)
         {
-            display.setFont(&comicNeue16Font);
             const char *str = "Layer error!";
             display.print(2, yOffset, WHITE, str);
         }
@@ -191,6 +193,7 @@ namespace Display
 } // namespace Display
 
 uint32_t iterations=0;
+unsigned long lastIterationDurationMS=0;
 int8_t fullDraws = 0;
 unsigned long iterationTimeMS=0;
 unsigned long lastDrawTimeMS=0;
@@ -223,7 +226,8 @@ void loop()
         Serial.print(F("iterations: "));
         Serial.print(iterations);
         Serial.print(F(" time: "));
-        Serial.print(timeDifference(currentTime, iterationTimeMS));
+        lastIterationDurationMS=timeDifference(currentTime, iterationTimeMS);
+        Serial.print(lastIterationDurationMS);
         Serial.print(F(" (errors: "));
         Serial.print(MCP23017::writeErrors);
         Serial.print(F(", "));
@@ -241,7 +245,7 @@ void loop()
     // Draw on the display every 100ms
     if (timeDifference(currentTime, lastDrawTimeMS) > 100)
     {
-        Display::fullDraw(pressedState.getAcitveLayer());
+        Display::fullDraw(pressedState.getAcitveLayer(), lastIterationDurationMS);
         fullDraws++;
         lastDrawTimeMS = currentTime;
     }
