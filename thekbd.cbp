@@ -218,6 +218,8 @@
 		<Unit filename="fonts/comic_neue_regular_16px.h">
 			<Option target="mk2 Arduino Micro" />
 		</Unit>
+		<Unit filename="fonts/comic_neue_regular_32px.h" />
+		<Unit filename="fonts/comic_neue_regular_48px.h" />
 		<Unit filename="libraries/HID/src/ASCIIMap.h" />
 		<Unit filename="libraries/HID/src/BootKeyboard/BootKeyboard.h" />
 		<Unit filename="libraries/HID/src/DescriptorPrimitives.h" />

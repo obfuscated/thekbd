@@ -2,7 +2,7 @@
 
 #include "libraries/display_font.h"
 
-const uint8_t testFontBitmaps2[] PROGMEM = {
+const uint8_t comicNeue16FontBitmaps2[] PROGMEM = {
     // Data for ' '
 
     // Data for '!'
@@ -797,7 +797,7 @@ const uint8_t testFontBitmaps2[] PROGMEM = {
     0x06
 };
 
-const Glyph testFontGlyphs[] PROGMEM = {
+const Glyph comicNeue16FontGlyphs[] PROGMEM = {
     {     0,  0,  0,  0,  5,  0,  1 }, // ' '
     {     0,  1, 11,  2,  3,  1, -10 }, // '!'
     {     2,  3,  3,  1,  5,  1, -10 }, // '"'
@@ -895,8 +895,8 @@ const Glyph testFontGlyphs[] PROGMEM = {
     {  1044,  8,  4,  1, 10,  1, -5 }  // '~'
 };
 
-const Font testFont PROGMEM = {
-    testFontBitmaps2,
-    testFontGlyphs,
+const Font comicNeue16Font PROGMEM = {
+    comicNeue16FontBitmaps2,
+    comicNeue16FontGlyphs,
     32, 126, 16
 };

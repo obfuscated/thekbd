@@ -6,6 +6,8 @@
 #include "constants.h"
 
 #include "fonts/comic_neue_regular_16px.h"
+#include "fonts/comic_neue_regular_32px.h"
+#include "fonts/comic_neue_regular_48px.h"
 #include "libraries/display_ssd1306.h"
 
 #include "KeyboardioHID.h"
@@ -152,7 +154,7 @@ namespace Display
     void setup(void)
     {
         display.begin();
-        display.setFont(&testFont);
+        display.setContrast(0);
     }
 
     /// This is a slow function which does a full draw.
@@ -160,20 +162,27 @@ namespace Display
     {
         display.fillScreen(BLACK);
 
+        int yOffset=48+2;
+
         if (layerNo != 0 && layerNo != 1)
         {
+            display.setFont(&comicNeue16Font);
             const char *str = "Layer error!";
-            display.print(2, 20, WHITE, str);
+            display.print(2, yOffset, WHITE, str);
         }
         else
         {
+            display.setFont(&comicNeue48Font);
             int8_t xOffset = 2;
-            xOffset += display.print(xOffset, 20, WHITE, "Layer ");
-            xOffset += display.printNumber(xOffset, 20, WHITE, layerNo + 1);
-            /*xOffset +=*/ display.print(xOffset, 20, WHITE, " active!");
+            xOffset += display.print(xOffset, yOffset, WHITE, "L");
+            xOffset += display.printNumber(xOffset, yOffset, WHITE, layerNo + 1);
+
+            display.setFont(&comicNeue16Font);
+            /*xOffset +=*/ display.print(xOffset, yOffset, WHITE, " active!");
         }
 
-        display.drawFastHLineInternal(0, 22, 127, WHITE);
+        display.drawFastHLineInternal(0, yOffset+2, 127, WHITE);
+        display.drawFastHLineInternal(0, yOffset+4, 127, WHITE);
         display.display();
     }
 
