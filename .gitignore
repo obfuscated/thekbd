@@ -1,5 +1,12 @@
+
 *.o
 *.depend
 *.layout
 *.elf
 *.hex
+**/rescue-backup/
+*.bak
+*.bck
+schematic/**/*-cache.lib
+schematic/**/*-cache.dcm
+bin/
