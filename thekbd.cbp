@@ -179,6 +179,7 @@
 			<Add option="-Wl,--gc-sections" />
 			<Add option="-flto -Os" />
 		</Linker>
+		<Unit filename="LICENSE.txt" />
 		<Unit filename="README.md" />
 		<Unit filename="constants.h" />
 		<Unit filename="cores/CDC.cpp" />
