@@ -148,8 +148,8 @@ namespace MCP23017
 
     const int I2CPort=0x20;
 
-    const int baseRow=0;
-    const int baseColumn=1;
+    const uint8_t baseRow=0;
+    const uint8_t baseColumn=1;
 
     uint32_t writeErrors=0;
     uint32_t readErrors=0;
